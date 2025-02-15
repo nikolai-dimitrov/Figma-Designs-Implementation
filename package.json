@@ -1,15 +1,15 @@
 {
-  "name": "figma-designs-implementation",
-  "version": "1.0.0",
-  "description": "## Design Implementations 1. [Figma Design Link For Responsive-Startup-Website](https://www.figma.com/community/file/1150370769219258177)",
-  "main": "vite.config.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "vite": "^6.1.0"
-  }
+	"name": "figma-designs-implementation",
+	"version": "1.0.0",
+	"description": "## Design Implementations 1. [Figma Design Link For Responsive-Startup-Website](https://www.figma.com/community/file/1150370769219258177)",
+	"main": "vite.config.js",
+	"scripts": {
+		"dev": "vite"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"vite": "^6.1.0"
+	}
 }
