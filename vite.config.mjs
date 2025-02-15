@@ -11,5 +11,8 @@ export default defineConfig({
 	},
 	server: {
 		open: "/",
+		watch: {
+			usePolling: true,
+		},
 	},
 });
