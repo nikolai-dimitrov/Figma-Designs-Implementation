@@ -1,4 +1,33 @@
-
-nav {
-	/* background-color: var(--primary-color-100); */
+/* Welcome section css */
+.welcome-section {
+	background: var(--primary-color-100);
+	padding-bottom: 78.87px;
 }
+
+.welcome-section-content {
+	max-width: 1180px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.welcome-info-container {
+	padding: 39.57px 0 39.57px 0;
+	max-width: 416px;
+}
+.welcome-info-container .label {
+	color: var(--white-color-100);
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.welcome-info-container p {
+	color: var(--white-color-75);
+	margin-bottom: 25px;
+}
+
+.welcome-info-container h1 {
+	color: var(--white-color-100);
+	margin-bottom: 15px;
+}
+
+/* Partners section css */
