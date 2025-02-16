@@ -1,6 +1,7 @@
 .header {
 	background-color: var(--primary-color-100);
 	padding-top: 35px;
+    padding: 35px 0 38px 0;
 }
 
 .header-content {
