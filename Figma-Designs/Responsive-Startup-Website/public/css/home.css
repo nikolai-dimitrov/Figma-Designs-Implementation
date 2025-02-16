@@ -2,6 +2,7 @@
 .welcome-section {
 	background: var(--primary-color-100);
 	padding-bottom: 78.87px;
+	margin-bottom: 60px;
 }
 
 .welcome-section-content {
