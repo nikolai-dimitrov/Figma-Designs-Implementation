@@ -63,8 +63,6 @@
 	align-items: center;
 	gap: 68px;
 	margin-bottom: 55px;
-	list-style: none;
-	padding: 0;
 }
 
 .partners-section button {
@@ -116,4 +114,76 @@
 .working-flow-description {
 	color: var(--dark-color-50);
 	margin-bottom: 34px;
+}
+
+/* Our talents section css */
+.our-talents-section {
+	max-width: 1176px;
+	margin: 0 auto;
+	margin-bottom: 54px;
+}
+
+.our-talents-info-container {
+	margin: 0 auto;
+	margin-bottom: 45px;
+	text-align: center;
+	max-width: 404px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.our-talents-info-container .label {
+	color: var(--primary-color-100);
+}
+
+.our-talents-info-container p:last-of-type {
+	margin-top: -6px;
+}
+
+.our-talents-cards-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 47px;
+	margin-bottom: 45px;
+}
+
+.our-talents-cards-container .item {
+	max-width: 279px;
+	border-radius: 5px;
+	box-shadow: 3px 4px 12px 1px var(--dark-color-25);
+	padding: 20px 25px 19px 25px;
+}
+
+.our-talents-cards-container .item p {
+	color: var(--dark-color-75);
+}
+
+/* Fixed width and height may cause problems in lower resolutions (responsive design) */
+.our-talents-img-wrapper {
+	margin: 0 13px;
+	margin-bottom: 19px;
+	width: 175px;
+	height: 175px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 1px solid;
+}
+
+.our-talents-img-wrapper img {
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+.our-talents-cards-container .item:first-child {
+	padding: 20px 39px 19px 38px;
+}
+
+.our-talents-cards-container .item h4 {
+	margin-bottom: 17px;
+}
+
+.our-talents-section button {
+	display: block;
+	margin: 0 auto;
 }
