@@ -1,0 +1,28 @@
+.header {
+	background-color: var(--primary-color-100);
+	padding-top: 35px;
+}
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 1175px;
+}
+
+.logo-container {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+}
+
+.nav ul {
+	display: flex;
+	gap: 30px;
+}
+
+.nav a {
+	text-decoration: none;
+	color: var(--white-color-100);
+}

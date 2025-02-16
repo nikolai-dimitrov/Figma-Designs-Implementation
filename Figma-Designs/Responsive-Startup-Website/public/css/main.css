@@ -1,0 +1,42 @@
+@import url("reset.css");
+@import url("header.css");
+
+:root {
+	--primary-color-code: 116, 198, 157;
+	--primary-color: rgb(var(--primary-color-code));
+	--primary-color-100: rgba(var(--primary-color-code), 100%);
+	--primary-color-75: rgba(var(--primary-color-code), 75%);
+	--primary-color-50: rgba(var(--primary-color-code), 50%);
+	--primary-color-25: rgba(var(--primary-color-code), 25%);
+
+	--white-color-code: 255, 255, 255;
+	--white-color: rgb(var(--white-color-code));
+	--white-color-100: rgba(var(--white-color-code), 100%);
+	--white-color-75: rgba(var(--white-color-code), 75%);
+	--white-color-50: rgba(var(--white-color-code), 50%);
+	--white-color-25: rgba(var(--white-color-code), 25%);
+
+	--dark-color-code: 13, 15, 16;
+	--dark-color: rgb(var(--dark-color-code));
+	--dark-color-100: rgba(var(--dark-color-code), 100%);
+	--dark-color-75: rgba(var(--dark-color-code), 75%);
+	--dark-color-50: rgba(var(--dark-color-code), 50%);
+	--dark-color-25: rgba(var(--dark-color-code), 25%);
+
+	font-family: "Work Sans", sans-serif;
+	font-size: 16px;
+	line-height: 125%;
+}
+
+.sub-heading {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 1440px;
+}
+.content-container {
+	max-width: 1180px;
+}
