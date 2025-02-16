@@ -96,3 +96,24 @@
 }
 
 /* Working flow section css */
+.working-flow-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1180px;
+	margin: 0 auto;
+	margin-bottom: 102.27px;
+}
+
+.working-flow-info-container {
+	max-width: 470px;
+}
+
+.working-flow-info-container h1 {
+	margin-bottom: 16px;
+}
+
+.working-flow-description {
+	color: var(--dark-color-50);
+	margin-bottom: 34px;
+}
