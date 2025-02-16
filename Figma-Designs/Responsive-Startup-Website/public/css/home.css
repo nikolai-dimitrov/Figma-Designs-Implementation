@@ -71,3 +71,28 @@
 	display: block;
 	margin: 0 auto;
 }
+
+/* Letters section css */
+.letters-section {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1180px;
+	margin: 0 auto;
+	margin-bottom: 73.57px;
+}
+
+.letters-info-container {
+	padding: 88.22px 0 88.22px 0;
+	max-width: 470px;
+}
+
+.letters-info-container h1 {
+	margin-bottom: 16px;
+}
+
+.letters-description {
+	color: var(--dark-color-50);
+	margin-bottom: 34px;
+}
+
+/* Working flow section css */
