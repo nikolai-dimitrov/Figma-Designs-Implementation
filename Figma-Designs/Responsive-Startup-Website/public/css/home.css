@@ -32,3 +32,42 @@
 }
 
 /* Partners section css */
+.partners-section {
+	margin: 0 auto;
+	max-width: 1159px;
+	margin-bottom: 73px;
+}
+
+.partners-info-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	max-width: 411px;
+	margin: 0 auto;
+	margin-bottom: 55px;
+	text-align: center;
+}
+
+.partners-info-container .label {
+	color: var(--primary-color-100);
+	text-transform: uppercase;
+}
+
+.partners-description {
+	margin-bottom: -5px;
+}
+
+.partners-img-container {
+	display: flex;
+	align-items: center;
+	gap: 68px;
+	margin-bottom: 55px;
+	list-style: none;
+	padding: 0;
+}
+
+.partners-section button {
+	display: block;
+	margin: 0 auto;
+}
