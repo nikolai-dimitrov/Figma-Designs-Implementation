@@ -76,13 +76,13 @@
 .letters-section {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	max-width: 1180px;
 	margin: 0 auto;
 	margin-bottom: 73.57px;
 }
 
 .letters-info-container {
-	padding: 88.22px 0 88.22px 0;
 	max-width: 470px;
 }
 
