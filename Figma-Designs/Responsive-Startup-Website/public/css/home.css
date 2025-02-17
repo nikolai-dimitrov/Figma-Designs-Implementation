@@ -188,4 +188,249 @@
 	margin: 0 auto;
 }
 
+@media screen and (max-width: 1200px) {
+	.welcome-section-content,
+	.partners-section,
+	.letters-section,
+	.working-flow-section,
+	.our-talents-section {
+		max-width: 1000px;
+	}
 
+	.welcome-image-container img {
+		height: 100%;
+	}
+
+	.our-talents-cards-container {
+		gap: 10px;
+	}
+
+	.our-talents-cards-container .item:first-child {
+		padding: 17px 20px 17px 22px;
+	}
+
+	.our-talents-cards-container .item {
+		padding: 17px 20px 17px 22px;
+		max-width: 250px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.welcome-section-content,
+	.partners-section,
+	.letters-section,
+	.working-flow-section,
+	.our-talents-section {
+		max-width: 850px;
+	}
+
+	.partners-img-container {
+		gap: 47px;
+	}
+
+	.welcome-section-content > div {
+		max-width: 400px;
+	}
+
+	.letters-section > div {
+		max-width: 400px;
+	}
+
+	.working-flow-section > div {
+		max-width: 400px;
+	}
+
+	.our-talents-cards-container {
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: 20px;
+		justify-items: center;
+	}
+
+	.our-talents-cards-container .item:first-child {
+		padding: 25px 30px 25px 30px;
+		max-width: unset;
+	}
+
+	.our-talents-cards-container .item {
+		padding: 25px 30px 25px 30px;
+		max-width: unset;
+	}
+
+	.our-talents-img-wrapper {
+		width: 190px;
+	}
+
+	.our-talents-cards-container .item:nth-child(even) {
+		justify-self: end;
+	}
+
+	.our-talents-cards-container .item:nth-child(odd) {
+		justify-self: start;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	.welcome-section-content,
+	.partners-section,
+	.letters-section,
+	.working-flow-section,
+	.our-talents-section {
+		max-width: 768px;
+	}
+
+	.welcome-section-content > div {
+		max-width: 350px;
+	}
+
+	.letters-section > div {
+		max-width: 350px;
+	}
+
+	.working-flow-section > div {
+		max-width: 350px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.welcome-section {
+		margin-bottom: 22px;
+		padding-bottom: unset;
+	}
+
+	.welcome-section-content,
+	.partners-section,
+	.letters-section,
+	.working-flow-section,
+	.our-talents-section {
+		max-width: 500px;
+	}
+
+	.welcome-section-content {
+		flex-direction: column-reverse;
+	}
+
+	.welcome-image-container img {
+		height: unset;
+	}
+
+	.welcome-section-content > div {
+		max-width: unset;
+	}
+	.welcome-info-container {
+		padding: 30px 0 40px 0;
+	}
+
+	.welcome-info-container h1 {
+		font-size: 28px;
+	}
+
+	.partners-section {
+		margin-bottom: 59.55px;
+	}
+
+	.partners-img-container {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.letters-section {
+		flex-direction: column;
+		gap: 30px;
+		margin-bottom: 60px;
+	}
+
+	.letters-info-container h1 {
+		margin-bottom: 20px;
+	}
+	/* design bug */
+	.letters-description {
+		margin-bottom: 20px;
+	}
+
+	.letters-section > div {
+		max-width: unset;
+	}
+	.working-flow-section {
+		flex-direction: column-reverse;
+		gap: 30px;
+		margin-bottom: 40px;
+	}
+
+	/* design bug */
+	.working-flow-description {
+		margin-bottom: 16px;
+	}
+
+	.working-flow-section > div {
+		max-width: unset;
+	}
+	.our-talents-section {
+		margin-bottom: 41px;
+	}
+
+	.our-talents-info-container {
+		margin-bottom: 41px;
+	}
+
+	.our-talents-cards-container {
+		grid-template-columns: repeat(1, 1fr);
+		row-gap: 30px;
+		margin-bottom: 42px;
+	}
+
+	.our-talents-cards-container .item:nth-child(even) {
+		justify-self: unset;
+	}
+
+	.our-talents-cards-container .item:nth-child(odd) {
+		justify-self: unset;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.welcome-section-content {
+		max-width: 335px;
+	}
+
+	.partners-img-container {
+		flex-wrap: nowrap;
+		flex-direction: column;
+		align-items: center;
+		justify-content: unset;
+		gap: 39px;
+	}
+
+	.our-talents-section {
+		margin-bottom: 39px;
+	}
+
+	.our-talents-cards-container {
+		margin-bottom: unset;
+	}
+
+	.our-talents-cards-container {
+		row-gap: 35px;
+		margin-bottom: 44px;
+	}
+
+	.our-talents-cards-container .item:first-child {
+		padding: 20px 39px 19px 38px;
+		max-width: unset;
+	}
+
+	.our-talents-cards-container .item {
+		padding: 20px 36px 19px 39px;
+		max-width: unset;
+	}
+	
+	.our-talents-img-wrapper {
+		width: 175px;
+	}
+
+	.partners-section,
+	.letters-section,
+	.working-flow-section,
+	.our-talents-section {
+		max-width: 335px;
+	}
+}
