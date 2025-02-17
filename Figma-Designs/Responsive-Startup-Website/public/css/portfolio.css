@@ -1,0 +1,36 @@
+.portfolio-section {
+	max-width: 1187px;
+	margin: 0 auto;
+}
+
+.portfolio-info-container {
+	max-width: 411px;
+	margin: 25px auto 82px;
+	text-align: center;
+}
+
+.portfolio-section .label {
+	color: var(--primary-color-100);
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+
+.portfolio-section .sub-heading {
+	margin-bottom: 10px;
+}
+
+.portfolio-section h1 {
+	margin-bottom: 16px;
+}
+
+.portfolio-img-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 55px;
+    margin-bottom: 64px;
+}
+
+.portfolio-section button {
+    margin: 0 auto 99px;
+    display: block;
+}
