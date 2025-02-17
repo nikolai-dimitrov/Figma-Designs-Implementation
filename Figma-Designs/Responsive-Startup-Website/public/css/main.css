@@ -1,5 +1,6 @@
 @import url("reset.css");
 @import url("header.css");
+@import url("footer.css");
 
 :root {
 	--primary-color-code: 116, 198, 157;
