@@ -1,6 +1,6 @@
 .portfolio-section {
 	max-width: 1187px;
-	margin: 0 auto;
+	margin: 0 auto 102px;
 }
 
 .portfolio-info-container {
@@ -27,10 +27,10 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 55px;
-    margin-bottom: 64px;
+	margin-bottom: 64px;
 }
 
-.portfolio-section button {
-    margin: 0 auto 99px;
-    display: block;
+.portfolio-section button  {
+	margin: 0 auto;
+	display: block;
 }
