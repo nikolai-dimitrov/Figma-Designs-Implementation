@@ -1,6 +1,8 @@
 /* Footer css */
 footer {
 	background-color: var(--primary-color-100);
+	/* --- */
+	align-self: end;
 }
 
 .footer-content {

@@ -110,8 +110,14 @@ h6 {
 body {
 	margin: 0 auto;
 	max-width: 1440px;
+	/* --- */
+	display: grid;
+	min-height: 100vh;
 }
 
+main {
+	align-self: center;
+}
 .content-container {
 	max-width: 1180px;
 }
