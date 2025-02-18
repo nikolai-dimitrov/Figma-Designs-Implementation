@@ -1,0 +1,52 @@
+.header .logo-container {
+	height: 50px;
+}
+
+.contact-section {
+	margin: 30px auto 93px;
+	max-width: 1180px;
+}
+
+.contact-info-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	margin-bottom: 67px;
+}
+
+.contact-info-container .sub-heading:nth-of-type(2) {
+	margin-top: -5px;
+}
+
+.contact-main-content-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 30px;
+}
+
+.contact-main-content-container form {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	row-gap: 21px;
+}
+
+.contact-main-content-container label {
+	display: flex;
+	flex-direction: column;
+	row-gap: 16px;
+}
+
+.contact-main-content-container input,
+textarea {
+	border-radius: 5px;
+}
+
+.contact-main-content-container input {
+	height: 38px;
+}
+
+.contact-main-content-container textarea {
+	height: 75px;
+}
