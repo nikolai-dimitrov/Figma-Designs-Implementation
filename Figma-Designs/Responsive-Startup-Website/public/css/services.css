@@ -1,0 +1,80 @@
+.header {
+	padding: 35px 0 33px 0;
+}
+.our-services {
+	max-width: 1227px;
+	margin: 35px auto 135px;
+}
+
+.our-services-info-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	max-width: 411px;
+	gap: 16px;
+	margin: 0 auto 78px;
+}
+
+.our-services-info-container .label {
+	color: var(--primary-color-100);
+	text-transform: uppercase;
+}
+
+.our-services-info-container .sub-heading:nth-of-type(3) {
+	margin-top: -5px;
+}
+
+.our-services-cards-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 105px;
+}
+
+.our-services-cards-container > li {
+	padding: 46px 30px;
+	border-radius: 5px;
+	box-shadow: 3px 4px 12px 1px var(--dark-color-25);
+}
+
+.card-info-container {
+	text-align: center;
+	margin-bottom: 52px;
+}
+
+.card-pricing-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15.9px;
+	margin-bottom: 10px;
+}
+
+.card-pricing-container h2 {
+	font-size: 40px;
+	font-family: "Work Sans", sans-serif;
+}
+
+.card-pricing-container span {
+	color: var(--dark-color-50);
+}
+
+.card-info-container p:last-of-type {
+	color: var(--dark-color-50);
+}
+
+.card-options-container {
+	margin-bottom: 45px;
+}
+
+.card-options-container li {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	margin-bottom: 11px;
+}
+
+.card button {
+	margin: 0 auto;
+	display: block;
+}
