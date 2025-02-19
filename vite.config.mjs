@@ -4,8 +4,9 @@ export default defineConfig({
 		rollupOptions: {
 			input: {
 				startup:
-					"./Figma-Designs/Responsive-Startup-Website/src/index.html",
-				finance: "./Figma-Designs/Finance-Flow-Website/src/index.html",
+					"./Figma-Designs/Responsive-Startup-Website/index.html",
+				finance: "./Figma-Designs/Finance-Flow-Website/index.html",
+				whitepace: "./Figma-Designs/Finance-Flow-Website/index.html",
 			},
 		},
 	},
