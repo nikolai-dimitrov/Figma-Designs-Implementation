@@ -1,0 +1,57 @@
+@import url("reset.css");
+:root {
+	--primary-color-dark: #043873;
+	--primary-color-light: #4f9cf9;
+
+	--secondary-color-1: #ffe492;
+	--secondary-color-2: #a7cefc;
+
+	--while-color: #ffffff;
+	--black-color: #212529;
+
+	font-family: "Inter", serif;
+}
+h1,
+h2 {
+	font-weight: bold;
+	letter-spacing: -2%;
+}
+
+h1 {
+	font-size: 72px;
+}
+
+h2 {
+	font-size: 64px;
+}
+
+.sub-heading {
+	font-size: 18px;
+	letter-spacing: -2%;
+	line-height: 30px;
+}
+
+.btn-primary,
+.btn-secondary {
+	font-size: 18px;
+	letter-spacing: 0px;
+	line-height: 21px;
+    border-radius: 8px;
+    border: unset;
+}
+
+.btn-primary {
+	color: var(--while-color);
+	background-color: var(--primary-color-light);
+}
+
+.btn-secondary {
+	color: var(--primary-color-dark);
+	background-color: var(--secondary-color-1);
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1920px;
+}
+

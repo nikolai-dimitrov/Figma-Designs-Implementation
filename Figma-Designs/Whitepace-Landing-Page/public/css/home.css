@@ -1,0 +1,48 @@
+/* Header section */
+header {
+	background-color: var(--primary-color-dark);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px 220px;
+}
+nav {
+	display: flex;
+	align-items: center;
+	gap: 60px;
+}
+
+nav ul {
+	display: flex;
+	gap: 32px;
+}
+
+nav ul a {
+	text-decoration: none;
+	color: var(--while-color);
+	font-family: "DM Sans", serif;
+	line-height: 23px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 18px;
+}
+
+header .btn-secondary {
+	padding: 20px 40px;
+	margin-right: 20px;
+}
+
+header .btn-primary {
+	padding: 18.5px 22px;
+}
+
+header .btn-primary div {
+	display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .btn-primary div img {
+    height: 14px;
+}
