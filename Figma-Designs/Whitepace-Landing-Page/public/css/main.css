@@ -23,11 +23,13 @@ h1 {
 
 h2 {
 	font-size: 64px;
+    letter-spacing: 0.4px;
+
 }
 
 .sub-heading {
 	font-size: 18px;
-	letter-spacing: -2%;
+	letter-spacing: -0.2px;
 	line-height: 30px;
 }
 

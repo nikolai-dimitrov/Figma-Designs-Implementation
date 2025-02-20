@@ -39,10 +39,72 @@ header .btn-primary {
 
 header .btn-primary div {
 	display: flex;
-    align-items: center;
-    gap: 10px;
+	align-items: center;
+	gap: 10px;
 }
 
 header .btn-primary div img {
-    height: 14px;
+	height: 14px;
+}
+
+/* Hero section */
+
+.hero {
+	display: flex;
+	padding: 140px 220px;
+	align-items: center;
+	background-color: var(--primary-color-dark);
+	position: relative;
+	top: -1px;
+	/* background-image: url("../img/Element.png");
+	background-position: center;
+	background-repeat: no-repeat; */
+}
+
+.hero .background-image-container {
+	position: absolute;
+	left: 0px;
+	top: 192px;
+	z-index: 0;
+}
+
+.hero .information-container {
+	max-width: 656px;
+}
+
+.hero .information-container .image-container {
+	z-index: 2;
+}
+
+.hero .information-container h2 {
+	margin-bottom: 24px;
+	color: var(--while-color);
+}
+
+.hero .information-container .sub-heading {
+	margin-bottom: 60px;
+	color: var(--while-color);
+}
+
+.hero .information-container .btn-primary {
+	padding: 20px;
+	line-height: 23px;
+	position: relative;
+	z-index: 2;
+}
+
+.hero .information-container .btn-primary div {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	z-index: 2;
+}
+
+.hero .information-container .btn-primary div img {
+	height: 10px;
+}
+
+/* Project management section */
+.project-management {
+    padding: 140px 220px;
 }
