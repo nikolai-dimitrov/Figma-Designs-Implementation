@@ -94,9 +94,6 @@ header .btn-primary div img {
 }
 
 .hero .information-container .btn-primary div {
-	display: flex;
-	align-items: center;
-	gap: 10px;
 	z-index: 2;
 }
 
