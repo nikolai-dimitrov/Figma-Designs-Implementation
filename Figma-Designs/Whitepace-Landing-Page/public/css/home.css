@@ -19,7 +19,7 @@ nav ul {
 
 nav ul a {
 	text-decoration: none;
-	color: var(--while-color);
+	color: var(--white-color);
 	font-family: "DM Sans", serif;
 	line-height: 23px;
 	display: flex;
@@ -31,16 +31,12 @@ nav ul a {
 header .btn-secondary {
 	padding: 20px 40px;
 	margin-right: 20px;
+	line-height: 21px;
 }
 
 header .btn-primary {
 	padding: 18.5px 22px;
-}
-
-header .btn-primary div {
-	display: flex;
-	align-items: center;
-	gap: 10px;
+	line-height: 21px;
 }
 
 header .btn-primary div img {
@@ -56,9 +52,6 @@ header .btn-primary div img {
 	background-color: var(--primary-color-dark);
 	position: relative;
 	top: -1px;
-	/* background-image: url("../img/Element.png");
-	background-position: center;
-	background-repeat: no-repeat; */
 }
 
 .hero .background-image-container {
@@ -78,12 +71,12 @@ header .btn-primary div img {
 
 .hero .information-container h2 {
 	margin-bottom: 24px;
-	color: var(--while-color);
+	color: var(--white-color);
 }
 
 .hero .information-container .sub-heading {
 	margin-bottom: 60px;
-	color: var(--while-color);
+	color: var(--white-color);
 }
 
 .hero .information-container .btn-primary {
@@ -101,7 +94,304 @@ header .btn-primary div img {
 	height: 10px;
 }
 
-/* Project management section */
+/* Second section */
+.second-section {
+	padding: 140px 220px;
+}
+/* Project management  */
+
 .project-management {
-    padding: 140px 220px;
+	margin-bottom: 100px;
+	display: flex;
+	align-items: center;
+	gap: 60px;
+}
+
+.project-management .information-container {
+	max-width: 672px;
+}
+
+.project-management .information-container .heading-container {
+	position: relative;
+}
+
+.project-management .information-container .heading-container img {
+	position: absolute;
+	top: 152px;
+	z-index: -1;
+}
+
+.project-management .information-container h1 {
+	margin-bottom: 24px;
+}
+
+.project-management .information-container .sub-heading {
+	margin-bottom: 60px;
+}
+
+.project-management .information-container .btn-primary img {
+	height: 14px;
+}
+
+.project-management .image-container {
+	height: 547px;
+}
+
+.project-management .image-container img {
+	height: 100%;
+}
+
+/* Work together  */
+.work-together {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.work-together .information-container {
+	max-width: 670px;
+}
+
+.work-together .information-container h1 {
+	margin-bottom: 24px;
+}
+
+.work-together .information-container .sub-heading {
+	margin-bottom: 60px;
+}
+
+.work-together .information-container .heading-container {
+	position: relative;
+}
+
+.work-together .information-container .heading-container img {
+	position: absolute;
+	top: 60px;
+	z-index: -1;
+	right: 171px;
+}
+
+/* Extensions section */
+.extensions {
+	padding: 140px 220px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--primary-color-dark);
+}
+
+.extensions .information-container {
+	max-width: 697px;
+}
+
+.extensions .information-container .heading-container {
+	position: relative;
+}
+
+.extensions .information-container .heading-container img {
+	position: absolute;
+	top: 65px;
+	left: 246px;
+	width: 330px;
+	height: 20px;
+	z-index: 0;
+}
+
+.extensions .information-container h1 {
+	margin-bottom: 24px;
+	color: var(--white-color);
+	z-index: 2;
+	position: relative;
+}
+
+.extensions .information-container .sub-heading {
+	margin-bottom: 60px;
+	color: var(--white-color);
+}
+
+.extensions .image-container {
+	max-width: 686px;
+	height: 479px;
+}
+
+.extensions .image-container img {
+	height: 100%;
+}
+
+/* Customise section */
+.customise {
+	padding: 140px 220px;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	gap: 98px;
+}
+
+.customise .information-container {
+	max-width: 669px;
+}
+
+.customise .information-container .heading-container {
+	position: relative;
+}
+
+.customise .information-container .heading-container img {
+	position: absolute;
+	z-index: -1;
+	top: 150px;
+	left: -10px;
+	width: 450px;
+	height: 35px;
+}
+
+.customise .information-container h1 {
+	margin-bottom: 24px;
+}
+
+.customise .information-container .sub-heading {
+	margin-bottom: 60px;
+}
+
+.customise .image-container {
+	max-width: 714px;
+	height: 532px;
+}
+
+.customise .image-container img {
+	height: 100%;
+}
+
+/* Plans section */
+.plans {
+	padding: 140px 220px;
+}
+
+.plans .information-container {
+	margin: 0 auto;
+	max-width: 976px;
+	text-align: center;
+}
+
+.plans .information-container .heading-container {
+	position: relative;
+	margin-bottom: 24px;
+}
+
+.plans .information-container .heading-container img {
+	position: absolute;
+	z-index: -1;
+	top: 62px;
+	left: 477px;
+	width: 320px;
+}
+
+.plans .information-container {
+	margin-bottom: 60px;
+}
+
+.plans .information-container .sub-heading {
+	margin-bottom: 60px;
+}
+
+/* Cards in plans section */
+.plans .plan-cards-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 32px;
+	/* padding: 63px 0; */
+}
+
+.plans .plan-cards-container article {
+	border-radius: 10px;
+	border: 1px solid var(--secondary-color-1);
+	padding: 40px 44px;
+	color: var(--black-color);
+}
+
+.plans .card-description {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	margin-bottom: 25px;
+}
+
+.plans .card-description .plan-usage {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 36px;
+}
+
+.plans .card-description h4 {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.plans .card-description .sub-heading {
+	line-height: 23px;
+}
+
+.plans .features {
+	margin-bottom: 25px;
+	max-width: 384px;
+}
+
+.plans .features li {
+	display: flex;
+	gap: 19px;
+	letter-spacing: -0.2px;
+    align-items: center;
+}
+
+.plans .features li:not(:last-child) {
+	margin-bottom: 28px;
+}
+
+.plans .features li img {
+	height: 18px;
+	width: 18px;
+}
+
+.plans .features p {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.plans article button {
+	padding: 16px 40px;
+	border-radius: 8px;
+	border: none;
+}
+
+/* Target specific child and its elements */
+.plans .plan-cards-container article:nth-child(2) {
+	background-color: var(--primary-color-dark);
+	color: var(--white-color);
+	border: 1px solid var(--primary-color-dark);
+	height: 761px;
+	padding-top: 79px;
+}
+
+.plans .plan-cards-container article:nth-child(2) .sub-heading {
+	color: var(--white-color);
+}
+
+.plans .plan-cards-container article:nth-child(2) h4 {
+	color: var(--secondary-color-1);
+}
+
+.plans .plan-cards-container article:nth-child(2) li p {
+	font-size: 18px;
+	line-height: 23px;
+}
+
+.plans article:nth-child(odd) button {
+	background-color: var(--white-color);
+	color: var(--black-color);
+	border: 1px solid var(--secondary-color-1);
+}
+
+.plans article:nth-child(even) button {
+	background-color: var(--primary-color-light);
+	color: var(--white-color);
 }
