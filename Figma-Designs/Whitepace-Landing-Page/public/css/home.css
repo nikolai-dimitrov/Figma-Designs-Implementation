@@ -647,5 +647,61 @@ header .btn-primary div img {
 .our-clients .slider img {
 	display: block;
 	margin: 0 auto;
+}
 
+/* Getting started section */
+.getting-started {
+	background-color: var(--primary-color-dark);
+	padding: 140px 0 32px 0;
+	color: var(--white-color);
+}
+
+.getting-started .content-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 608px;
+	margin: 0 auto;
+}
+
+.getting-started .content-container h1 {
+	text-align: center;
+	margin-bottom: 24px;
+	color: var(--white-color);
+}
+
+.getting-started .information-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 38px;
+}
+
+.getting-started .information-container p {
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: -0.2px;
+	text-align: center;
+}
+
+.getting-started .information-container p:nth-last-of-type(1) {
+	margin-top: -40px;
+}
+
+.getting-started .information-container button {
+	font-size: 16px;
+	letter-spacing: -0.2px;
+    /* padding: 18px 40px; */
+}
+
+/* spans container */
+.getting-started .information-container div:nth-child(4) {
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: -0.2px;
+}
+
+.getting-started .information-container .icons-container {
+    display: flex;
+    gap: 40px;
 }
