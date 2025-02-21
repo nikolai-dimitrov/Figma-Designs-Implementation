@@ -550,6 +550,102 @@ header .btn-primary div img {
 }
 
 /* Our clients section */
- .our-clients {
+.our-clients {
+	padding: 140px 220px;
+}
+.our-clients .heading-container {
+	text-align: center;
+	position: relative;
+}
 
- }
+.our-clients .heading-container img {
+	position: absolute;
+	z-index: -1;
+	top: 31px;
+	right: 293px;
+	width: 255px;
+	height: 45px;
+}
+
+.our-clients .heading-container h1 {
+	margin-bottom: 60px;
+}
+
+.our-clients .cards-container {
+	display: flex;
+	gap: 32px;
+	margin-bottom: 60px;
+}
+/* Articles css */
+.our-clients article {
+	padding: 60px 40px;
+	border-radius: 10px;
+}
+
+/* Articles typography */
+.our-clients article p {
+	color: var(--black-color);
+}
+
+.our-clients article h5 {
+	color: var(--black-color);
+	font-size: 24px;
+	line-height: 36px;
+	margin-bottom: 15px;
+}
+
+/* second and third article colors css */
+.our-clients article:not(:first-child) {
+	background-color: var(--primary-color-light);
+}
+
+.our-clients article:not(:first-child) h5 {
+	color: var(--primary-color-dark);
+}
+
+.our-clients article:not(:first-child) p {
+	color: var(--white-color);
+}
+
+.our-clients article:not(:first-child) .description-container {
+	border-bottom: 1px solid var(--white-color);
+}
+
+/* Article description container css */
+.our-clients .description-container {
+	max-width: 391.5px;
+	margin-bottom: 60px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid var(--black-color);
+}
+
+.our-clients .description-container .img-container {
+	height: 61.5px;
+	width: 86px;
+	margin-bottom: 28px;
+}
+
+.our-clients .description-container .img-container img {
+	height: 100%;
+}
+
+/* Article person container css */
+
+.our-clients .person-container {
+	display: flex;
+	align-items: center;
+	gap: 42px;
+}
+.our-clients .person-container .person-info-container {
+	max-width: 246px;
+}
+
+.our-clients article .person-info-container p {
+	letter-spacing: -0.2px;
+}
+
+.our-clients .slider img {
+	display: block;
+	margin: 0 auto;
+
+}
