@@ -11,6 +11,11 @@
 
 	font-family: "Inter", serif;
 }
+
+button {
+	cursor: pointer;
+}
+
 h1,
 h2 {
 	font-weight: bold;

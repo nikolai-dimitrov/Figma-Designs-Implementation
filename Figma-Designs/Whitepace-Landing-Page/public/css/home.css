@@ -492,10 +492,10 @@ header .btn-primary div img {
 .our-sponsors .heading-container img {
 	position: absolute;
 	top: 59px;
-    right: 491px;
-    width: 328px;
-    height: 43px;
-    z-index: -1;
+	right: 491px;
+	width: 328px;
+	height: 43px;
+	z-index: -1;
 }
 
 .our-sponsors .heading-container h1 {
@@ -508,3 +508,48 @@ header .btn-primary div img {
 }
 
 /* Favourite apps section */
+
+.favourite-apps {
+	padding: 140px 220px;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--primary-color-dark);
+	position: relative;
+}
+
+.favourite-apps .background-image-container {
+	position: absolute;
+	right: 7px;
+	top: 11px;
+}
+
+.favourite-apps .information-container {
+	max-width: 798px;
+	position: relative;
+	z-index: 1;
+}
+
+.favourite-apps .information-container h1,
+.sub-heading {
+	color: var(--white-color);
+}
+
+.favourite-apps .information-container h1 {
+	margin-bottom: 24px;
+}
+
+.favourite-apps .information-container p {
+	margin-bottom: 60px;
+}
+
+.favourite-apps .image-container {
+	position: relative;
+	z-index: 1;
+}
+
+/* Our clients section */
+ .our-clients {
+
+ }
