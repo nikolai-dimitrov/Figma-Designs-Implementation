@@ -340,7 +340,7 @@ header .btn-primary div img {
 	display: flex;
 	gap: 19px;
 	letter-spacing: -0.2px;
-    align-items: center;
+	align-items: center;
 }
 
 .plans .features li:not(:last-child) {
@@ -394,4 +394,45 @@ header .btn-primary div img {
 .plans article:nth-child(even) button {
 	background-color: var(--primary-color-light);
 	color: var(--white-color);
+}
+
+/* Work section */
+.work {
+	background-color: var(--primary-color-dark);
+	padding: 140px 220px;
+	position: relative;
+	overflow: hidden;
+}
+
+.work .information-container {
+	margin: 0 auto;
+	text-align: center;
+	max-width: 1064px;
+}
+.work .information-container .heading-container {
+	position: relative;
+}
+
+.work .information-container .heading-container img {
+	position: absolute;
+	right: -13px;
+	top: 63px;
+}
+
+.work .information-container h1 {
+	color: var(--white-color);
+	margin-bottom: 24px;
+	z-index: 1;
+	position: relative;
+}
+
+.work .information-container .sub-heading {
+	color: var(--white-color);
+	margin-bottom: 60px;
+}
+
+.work .background-image-container {
+	position: absolute;
+	top: -182px;
+	left: 0px;
 }
