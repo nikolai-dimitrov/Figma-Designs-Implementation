@@ -436,3 +436,44 @@ header .btn-primary div img {
 	top: -182px;
 	left: 0px;
 }
+
+/* Data section */
+
+.data {
+	display: flex;
+	align-items: center;
+	padding: 140px 220px;
+}
+
+.data .information-container {
+	max-width: 800px;
+}
+
+.data .information-container .heading-container {
+	position: relative;
+}
+
+.data .information-container .heading-container img {
+	position: absolute;
+	right: 274px;
+	top: 67px;
+	z-index: -1;
+    width: 320px;
+    height: 35px;
+}
+
+.data .information-container h1 {
+	margin-bottom: 24px;
+}
+
+.data .information-container .sub-heading {
+	margin-bottom: 60px; 
+}
+
+.data .image-container {
+    height: 381px;
+}
+
+.data .image-container img {
+    height: 100%;
+}
