@@ -7,6 +7,7 @@ export default defineConfig({
 					"./Figma-Designs/Responsive-Startup-Website/index.html",
 				finance: "./Figma-Designs/Finance-Flow-Website/index.html",
 				whitepace: "./Figma-Designs/Finance-Flow-Website/index.html",
+				bulgaria: "./Figma-Designs/Finance-Flow-Website/index.html",
 			},
 		},
 	},

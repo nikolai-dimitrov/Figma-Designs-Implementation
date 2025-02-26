@@ -705,3 +705,9 @@ header .btn-primary div img {
     display: flex;
     gap: 40px;
 }
+/* Footer section */
+
+footer {
+    background-color: var(--primary-color-dark);
+    padding: 140px 220px 32px 220px;
+}

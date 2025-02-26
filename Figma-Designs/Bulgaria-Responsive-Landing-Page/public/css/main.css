@@ -1,0 +1,111 @@
+@import url("./reset.css");
+:root {
+	--white--color: #fff;
+	--black--color: #000;
+	--gray--color: #4f4f53;
+
+	font-family: "DM Sans", serif;
+}
+
+body {
+	padding: 20px;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 40px;
+	line-height: 120%;
+	font-weight: 500;
+}
+
+h2 {
+	font-size: 28px;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h5 {
+	font-size: 14px;
+}
+
+.p1-fonts {
+	font-size: 18px;
+}
+
+.p2-fonts {
+	font-size: 16px;
+}
+
+.btn {
+	font-size: 16px;
+	font-weight: 600;
+	padding: 12px 20px;
+	border-radius: 40px;
+	cursor: pointer;
+}
+
+.btn-primary {
+	background-color: var(--black--color);
+	color: var(--white--color);
+	border: none;
+}
+
+.btn-secondary {
+	background-color: none;
+	color: var(--white--color);
+}
+
+/* Very small laptop and mobile devices */
+@media screen and (max-width: 1024px) {
+	body {
+		/* padding: 10px; */
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-size: 32px;
+		font-weight: 500;
+		letter-spacing: initial !important;
+	}
+
+	h2 {
+		font-size: 22px;
+		font-weight: 400;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	h4 {
+		font-size: 18px;
+	}
+
+	h5 {
+		font-size: 12px;
+	}
+
+	.p1-fonts {
+		font-size: 16px;
+	}
+
+	.p2-fonts {
+		font-size: 14px;
+	}
+
+	.btn {
+		font-size: 14px;
+		font-weight: 600;
+		padding: 12px 20px;
+		border-radius: 40px;
+		cursor: pointer;
+	}
+}
