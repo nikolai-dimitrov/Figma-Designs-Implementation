@@ -568,7 +568,7 @@ header .btn-primary div img {
 }
 
 .our-clients .heading-container h1 {
-	margin-bottom: 60px;
+	margin-bottom: 57px;
 }
 
 .our-clients .cards-container {
@@ -691,7 +691,7 @@ header .btn-primary div img {
 .getting-started .information-container button {
 	font-size: 16px;
 	letter-spacing: -0.2px;
-    /* padding: 18px 40px; */
+	/* padding: 18px 40px; */
 }
 
 /* spans container */
@@ -702,12 +702,102 @@ header .btn-primary div img {
 }
 
 .getting-started .information-container .icons-container {
-    display: flex;
-    gap: 40px;
+	display: flex;
+	gap: 40px;
 }
 /* Footer section */
 
 footer {
-    background-color: var(--primary-color-dark);
-    padding: 140px 220px 32px 220px;
+	color: var(--white-color);
+	background-color: var(--primary-color-dark);
+	padding: 140px 220px 32px 220px;
+}
+
+footer .top-side-container {
+	display: flex;
+	margin-bottom: 67px;
+}
+
+footer .top-side-container ul {
+	display: flex;
+	flex-direction: column;
+}
+
+footer .top-side-container ul li:first-child {
+	font-weight: bold;
+	line-height: 22px;
+}
+
+footer .top-side-container .whitepace-container {
+	max-width: 240px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding-bottom: 13px;
+	margin-right: 65.25px;
+}
+
+footer .top-side-container .whitepace-container img {
+	max-width: 191px;
+}
+footer .top-side-container .product,
+footer .top-side-container .resources,
+footer .top-side-container .company {
+	gap: 16px;
+	width: 205px;
+	margin-right: 100px;
+}
+
+footer .top-side-container .product {
+	width: 205px;
+	gap: 15px;
+}
+
+footer .top-side-container .product li:nth-child(2) {
+	color: var(--secondary-color-1);
+}
+
+footer .top-side-container .try-it-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	max-width: 259px;
+	gap: 23px;
+}
+
+footer .top-side-container .try-it-container h5 {
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 36px;
+}
+
+footer .top-side-container .try-it-container .btn-primary {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+footer .bottom-side-container {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 33px;
+}
+
+footer .copyright-container {
+	display: flex;
+	gap: 60px;
+}
+
+footer .copyright-container li {
+	letter-spacing: -0.2px;
+}
+
+footer .copyright-container li:first-child {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+footer .social-media-icons-container {
+	display: flex;
+	gap: 32px;
 }
