@@ -19,7 +19,7 @@ Pixel perfect implementation of different figma designs
 - Responsive Design
 - Burger Menu
 
-
+---
 ## 2. Whitepace Responsive Landing Page
 ➡️ [Figma Design Link](https://www.figma.com/community/file/1156860863353724933)
 
@@ -27,7 +27,7 @@ Pixel perfect implementation of different figma designs
 
 - Responsive Design
 - Burger Menu
-
+---
 ## 3. Bulgaria Landing Page Responsive Design
 ❗Sirma HTML & CSS Exam
 
@@ -38,6 +38,7 @@ Pixel perfect implementation of different figma designs
 - Responsive Design
 - Burger Menu
 
+---
 ## Run Locally
 
 Clone the project
