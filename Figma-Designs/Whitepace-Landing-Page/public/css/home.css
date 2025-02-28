@@ -1,11 +1,16 @@
 /* Header section */
 header {
 	background-color: var(--primary-color-dark);
+
+}
+
+header .section-content-wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 16px 220px;
+	padding: 16px 0px;
 }
+
 nav {
 	display: flex;
 	align-items: center;
@@ -44,21 +49,17 @@ header .btn-primary div img {
 }
 
 /* Hero section */
-
 .hero {
-	display: flex;
-	padding: 140px 220px;
-	align-items: center;
 	background-color: var(--primary-color-dark);
-	position: relative;
-	top: -1px;
+	background-image: url("../img/Element.png");
+	background-position: center 68%;
+	background-repeat: no-repeat;
 }
 
-.hero .background-image-container {
-	position: absolute;
-	left: 0px;
-	top: 192px;
-	z-index: 0;
+.hero .section-content-wrapper {
+	display: flex;
+	padding: 140px 0px;
+	align-items: center;
 }
 
 .hero .information-container {
@@ -96,7 +97,7 @@ header .btn-primary div img {
 
 /* Second section */
 .second-section {
-	padding: 140px 220px;
+	padding: 140px 0px;
 }
 /* Project management  */
 
@@ -127,6 +128,7 @@ header .btn-primary div img {
 
 .project-management .information-container .sub-heading {
 	margin-bottom: 60px;
+	color: inherit;
 }
 
 .project-management .information-container .btn-primary img {
@@ -158,6 +160,7 @@ header .btn-primary div img {
 
 .work-together .information-container .sub-heading {
 	margin-bottom: 60px;
+	color: inherit;
 }
 
 .work-together .information-container .heading-container {
@@ -173,11 +176,14 @@ header .btn-primary div img {
 
 /* Extensions section */
 .extensions {
-	padding: 140px 220px;
+	background-color: var(--primary-color-dark);
+}
+
+.extensions .section-content-wrapper {
+	padding: 140px 0px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: var(--primary-color-dark);
 }
 
 .extensions .information-container {
@@ -219,8 +225,9 @@ header .btn-primary div img {
 }
 
 /* Customise section */
-.customise {
-	padding: 140px 220px;
+
+.customise .section-content-wrapper {
+	padding: 140px 0px;
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: center;
@@ -250,6 +257,7 @@ header .btn-primary div img {
 
 .customise .information-container .sub-heading {
 	margin-bottom: 60px;
+	color: inherit;
 }
 
 .customise .image-container {
@@ -263,7 +271,7 @@ header .btn-primary div img {
 
 /* Plans section */
 .plans {
-	padding: 140px 220px;
+	padding: 140px 0px;
 }
 
 .plans .information-container {
@@ -291,6 +299,7 @@ header .btn-primary div img {
 
 .plans .information-container .sub-heading {
 	margin-bottom: 60px;
+	color: inherit;
 }
 
 /* Cards in plans section */
@@ -299,7 +308,6 @@ header .btn-primary div img {
 	justify-content: space-between;
 	align-items: center;
 	gap: 32px;
-	/* padding: 63px 0; */
 }
 
 .plans .plan-cards-container article {
@@ -329,6 +337,7 @@ header .btn-primary div img {
 
 .plans .card-description .sub-heading {
 	line-height: 23px;
+	color: inherit;
 }
 
 .plans .features {
@@ -399,9 +408,10 @@ header .btn-primary div img {
 /* Work section */
 .work {
 	background-color: var(--primary-color-dark);
-	padding: 140px 220px;
-	position: relative;
-	overflow: hidden;
+	padding: 140px 0px;
+	background-image: url("../img/work-section-background.png");
+	background-repeat: no-repeat;
+	background-position: left 69%;
 }
 
 .work .information-container {
@@ -409,6 +419,7 @@ header .btn-primary div img {
 	text-align: center;
 	max-width: 1064px;
 }
+
 .work .information-container .heading-container {
 	position: relative;
 }
@@ -431,18 +442,11 @@ header .btn-primary div img {
 	margin-bottom: 60px;
 }
 
-.work .background-image-container {
-	position: absolute;
-	top: -182px;
-	left: 0px;
-}
-
 /* Data section */
-
-.data {
+.data .section-content-wrapper {
 	display: flex;
 	align-items: center;
-	padding: 140px 220px;
+	padding: 140px 0px;
 }
 
 .data .information-container {
@@ -468,6 +472,7 @@ header .btn-primary div img {
 
 .data .information-container .sub-heading {
 	margin-bottom: 60px;
+	color: inherit;
 }
 
 .data .image-container {
@@ -476,12 +481,13 @@ header .btn-primary div img {
 
 .data .image-container img {
 	height: 100%;
+	scale: 1.1;
 }
 
 /* Our sponsors section */
 
 .our-sponsors {
-	padding: 140px 220px;
+	padding: 140px 0px;
 }
 
 .our-sponsors .heading-container {
@@ -508,21 +514,18 @@ header .btn-primary div img {
 }
 
 /* Favourite apps section */
-
 .favourite-apps {
-	padding: 140px 220px;
+	background-color: var(--primary-color-dark);
+	background-image: url("../img/facourite-apps-img-bg.png");
+	background-position: center 19%;
+}
+
+.favourite-apps .section-content-wrapper {
+	padding: 140px 0px;
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: center;
 	justify-content: space-between;
-	background-color: var(--primary-color-dark);
-	position: relative;
-}
-
-.favourite-apps .background-image-container {
-	position: absolute;
-	right: 7px;
-	top: 11px;
 }
 
 .favourite-apps .information-container {
@@ -551,7 +554,7 @@ header .btn-primary div img {
 
 /* Our clients section */
 .our-clients {
-	padding: 140px 220px;
+	padding: 140px 0px;
 }
 .our-clients .heading-container {
 	text-align: center;
@@ -710,7 +713,7 @@ header .btn-primary div img {
 footer {
 	color: var(--white-color);
 	background-color: var(--primary-color-dark);
-	padding: 140px 220px 32px 220px;
+	padding: 140px 0px 32px 0px;
 }
 
 footer .top-side-container {
