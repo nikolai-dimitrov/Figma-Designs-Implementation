@@ -1,7 +1,6 @@
 /* Header section */
 header {
 	background-color: var(--primary-color-dark);
-
 }
 
 header .section-content-wrapper {
@@ -530,8 +529,6 @@ header .btn-primary div img {
 
 .favourite-apps .information-container {
 	max-width: 798px;
-	position: relative;
-	z-index: 1;
 }
 
 .favourite-apps .information-container h1,
@@ -545,11 +542,6 @@ header .btn-primary div img {
 
 .favourite-apps .information-container p {
 	margin-bottom: 60px;
-}
-
-.favourite-apps .image-container {
-	position: relative;
-	z-index: 1;
 }
 
 /* Our clients section */
@@ -694,7 +686,6 @@ header .btn-primary div img {
 .getting-started .information-container button {
 	font-size: 16px;
 	letter-spacing: -0.2px;
-	/* padding: 18px 40px; */
 }
 
 /* spans container */
@@ -803,4 +794,204 @@ footer .copyright-container li:first-child {
 footer .social-media-icons-container {
 	display: flex;
 	gap: 32px;
+}
+
+/* Media queries */
+@media screen and (max-width: 1550px) {
+	.data .image-container img {
+		scale: unset;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	header .section-content-wrapper,
+	.hero .section-content-wrapper,
+	.second-section .section-content-wrapper,
+	.extensions .section-content-wrapper,
+	.customise .section-content-wrapper,
+	.plans .section-content-wrapper,
+	.work .section-content-wrapper,
+	.data .section-content-wrapper,
+	.our-sponsors .section-content-wrapper,
+	.favourite-apps .section-content-wrapper,
+	.our-clients .section-content-wrapper,
+	footer .section-content-wrapper {
+		/* max-width: 1376px; */
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+	/* header */
+
+	nav ul a {
+		gap: unset;
+	}
+
+	nav ul a img {
+		width: 25px;
+	}
+
+	/* hero */
+	.hero {
+		background-size: contain;
+		background-position: center 63%;
+	}
+	.hero .section-content-wrapper {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	.hero .information-container {
+		max-width: 691px;
+	}
+
+	/* second section */
+	.project-management {
+		gap: unset;
+	}
+
+	.project-management .information-container {
+		max-width: 657px;
+	}
+
+	.project-management .image-container {
+		height: unset;
+	}
+
+	.project-management .image-container img {
+		width: 719px;
+		height: 448px;
+	}
+
+	.work-together .information-container {
+		max-width: 633px;
+	}
+
+	.work-together .information-container .heading-container img {
+		top: 62px;
+		right: 94px;
+		width: 322px;
+	}
+
+	.work-together .image-container {
+		max-width: 583px;
+	}
+
+	/* extensions */
+	.extensions .section-content-wrapper {
+		gap: 98px;
+		justify-content: unset;
+	}
+	.extensions .information-container {
+		max-width: 592px;
+	}
+
+	.extensions .information-container .heading-container img {
+		width: 410px;
+		top: 98px;
+		left: 0px;
+	}
+
+	/* customise */
+	.customise .section-content-wrapper {
+		gap: 60px;
+	}
+
+	.customise .information-container {
+		max-width: 646px;
+	}
+
+	.customise .information-container .heading-container img {
+		width: 475px;
+		top: 130px;
+		left: 11px;
+	}
+
+	.customise .information-container .btn-primary {
+		font-size: 16px;
+	}
+
+	.customise .image-container {
+		max-width: 670px;
+		max-height: 499px;
+	}
+
+	/* data */
+	.data .information-container {
+		max-width: 695px;
+	}
+
+	.data .information-container .heading-container img {
+		/*  */
+		top: 70px;
+		right: 132px;
+		width: 338px;
+		height: 33px;
+	}
+
+	.data .image-container img {
+		scale: 1.1;
+	}
+
+	/* our sponsors */
+	.our-sponsors .heading-container img {
+		top: 64px;
+		right: 447px;
+	}
+
+	/* favourite apps */
+	.favourite-apps .section-content-wrapper {
+		gap: 100px;
+		justify-content: unset;
+	}
+
+	.favourite-apps {
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.favourite-apps .information-container {
+		max-width: 694px;
+	}
+
+	.favourite-apps .information-container .sub-heading {
+		letter-spacing: -0.1px;
+	}
+
+	/* our clients */
+	.our-clients article {
+		padding: 60px 24px;
+	}
+
+	/* getting started */
+	.getting-started .information-container .btn-primary {
+		font-size: 18px;
+		letter-spacing: 0.5px;
+	}
+
+	/* footer */
+	footer .top-side-container {
+		gap: 100px;
+	}
+
+	footer .top-side-container .whitepace-container {
+		margin: unset;
+	}
+
+	footer .top-side-container .product {
+		width: 180px;
+		margin: unset;
+	}
+
+	footer .top-side-container .resources {
+		width: unset;
+		margin: unset;
+	}
+	footer .top-side-container .company {
+		width: unset;
+		margin: unset;
+	}
+	footer .top-side-container .try-it-container {
+		margin-left: 13px;
+	}
 }
