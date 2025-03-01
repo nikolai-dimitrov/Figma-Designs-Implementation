@@ -10,15 +10,15 @@ header .section-content-wrapper {
 	padding: 16px 0px;
 }
 
-nav {
+/* nav {
 	display: flex;
 	align-items: center;
 	gap: 60px;
-}
+} */
 
 nav ul {
 	display: flex;
-	gap: 32px;
+	align-items: center;
 }
 
 nav ul a {
@@ -30,6 +30,11 @@ nav ul a {
 	align-items: center;
 	gap: 10px;
 	font-size: 18px;
+	margin-right: 32px;
+}
+
+nav ul li:nth-last-of-type(3) a {
+	margin-right: 60px;
 }
 
 header .btn-secondary {
@@ -810,14 +815,18 @@ footer .social-media-icons-container {
 	.favourite-apps .section-content-wrapper,
 	.our-clients .section-content-wrapper,
 	footer .section-content-wrapper {
-		/* max-width: 1376px; */
 		padding-left: 32px;
 		padding-right: 32px;
 	}
-	/* header */
 
+	/* header */
 	nav ul a {
 		gap: unset;
+		margin-right: 27px;
+	}
+
+	nav ul li:nth-last-of-type(3) a {
+		margin-right: 75px;
 	}
 
 	nav ul a img {
@@ -995,12 +1004,12 @@ footer .social-media-icons-container {
 }
 
 @media screen and (max-width: 1230px) {
-	nav {
-		gap: 30px;
+	nav ul a {
+		margin-right: 12px;
 	}
 
-	nav ul {
-		gap: 12px;
+	nav ul li:nth-last-of-type(3) a {
+		margin-right: 30px;
 	}
 }
 
