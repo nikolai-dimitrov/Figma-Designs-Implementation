@@ -10,6 +10,21 @@ header .section-content-wrapper {
 	padding: 16px 0px;
 }
 
+.burger-menu {
+	display: none;
+	width: 42px;
+	height: 25px;
+}
+
+.open-menu-icon {
+	background-image: url("../img/Hum-menu.png");
+}
+
+.close-menu-icon {
+	background-image: url("../img/close.svg");
+	background-position: center;
+}
+
 nav {
 	display: flex;
 	align-items: center;
@@ -1006,8 +1021,12 @@ footer .social-media-icons-container {
 
 @media screen and (max-width: 1152px) {
 	/* nav */
-	nav ul {
+	.nav-hidden {
 		display: none;
+	}
+
+	.burger-menu {
+		display: block;
 	}
 
 	/* hero */
@@ -1211,5 +1230,12 @@ footer .social-media-icons-container {
 	/* footer */
 	footer .top-side-container {
 		gap: 80px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	/* nav */
+	.nav-btns-hidden {
+		display: none;
 	}
 }
