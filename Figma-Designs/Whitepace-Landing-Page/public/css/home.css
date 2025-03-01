@@ -82,12 +82,6 @@ header .btn-primary div img {
 .hero .information-container .btn-primary {
 	padding: 20px;
 	line-height: 23px;
-	position: relative;
-	z-index: 2;
-}
-
-.hero .information-container .btn-primary div {
-	z-index: 2;
 }
 
 .hero .information-container .btn-primary div img {
@@ -914,6 +908,10 @@ footer .social-media-icons-container {
 		max-width: 670px;
 		max-height: 499px;
 	}
+	/* work */
+	.work {
+		background-position: -26% 68%;
+	}
 
 	/* data */
 	.data .information-container {
@@ -993,5 +991,225 @@ footer .social-media-icons-container {
 	}
 	footer .top-side-container .try-it-container {
 		margin-left: 13px;
+	}
+}
+
+@media screen and (max-width: 1230px) {
+	nav {
+		gap: 30px;
+	}
+
+	nav ul {
+		gap: 12px;
+	}
+}
+
+@media screen and (max-width: 1152px) {
+	/* nav */
+	nav ul {
+		display: none;
+	}
+
+	/* hero */
+	.hero .section-content-wrapper {
+		padding-bottom: 140px;
+		padding-top: 140px;
+	}
+
+	.hero .information-container {
+		max-width: 562px;
+	}
+
+	/* second  */
+	.project-management {
+		justify-content: space-between;
+	}
+
+	.project-management .information-container {
+		max-width: 436px;
+	}
+
+	.project-management .information-container .heading-container img {
+		width: 230px;
+		height: 40px;
+		left: 184px;
+		top: 133px;
+	}
+
+	.project-management .image-container img {
+		width: 527px;
+		height: 328px;
+	}
+
+	.work-together {
+		gap: 33px;
+		justify-content: unset;
+	}
+
+	.work-together .information-container {
+		max-width: 527px;
+	}
+
+	.work-together .information-container .heading-container img {
+		width: 270px;
+		height: 24px;
+		left: 184px;
+		top: 41px;
+	}
+
+	.work-together .image-container {
+		max-width: 528px;
+	}
+
+	/* extensions */
+	.extensions .information-container {
+		max-width: 528px;
+	}
+
+	.extensions .information-container .heading-container img {
+		top: 54px;
+		left: 212px;
+		width: 313px;
+		height: 19px;
+	}
+
+	.extensions .image-container {
+		max-width: 459px;
+		height: 320px;
+	}
+
+	/* customise */
+	.customise .section-content-wrapper {
+		align-items: stretch;
+	}
+
+	.customise .information-container {
+		max-width: 494px;
+	}
+
+	.customise .image-container {
+		height: unset;
+	}
+
+	/* customise */
+	.customise .information-container .heading-container img {
+		width: 346px;
+		top: 137px;
+		left: 0px;
+		height: 30px;
+	}
+
+	.customise .information-container .btn-primary {
+		font-size: 18px;
+	}
+
+	/* plans */
+	.plans .information-container .heading-container img {
+		top: 52px;
+		left: 483px;
+		width: 280px;
+		height: 30px;
+	}
+
+	.plans .plan-cards-container article:nth-child(2) {
+		height: unset;
+		padding-bottom: 79px;
+	}
+
+	.plans .features li {
+		letter-spacing: unset;
+	}
+
+	/* work */
+	.work {
+		background-image: unset;
+	}
+
+	.work .information-container {
+		max-width: 650px;
+		text-align: unset;
+		margin: unset;
+	}
+
+	.work .information-container .heading-container img {
+		right: -13px;
+		top: 130px;
+		height: 38px;
+		width: 300px;
+	}
+
+	.work .information-container .sub-heading {
+		text-align: center;
+	}
+
+	/* data */
+	.data .information-container {
+		max-width: 526px;
+	}
+
+	.data .information-container .heading-container img {
+		top: 56px;
+		right: 56px;
+		width: 276px;
+		height: 41px;
+	}
+
+	.data .image-container {
+		height: unset;
+	}
+
+	.data .image-container img {
+		scale: 1.05;
+	}
+
+	/* our sponsors */
+	.our-sponsors .heading-container img {
+		top: 59px;
+		right: 324px;
+		width: 300px;
+	}
+
+	/* favourite apps */
+	.favourite-apps .information-container {
+		max-width: 460px;
+	}
+
+	/* our clients */
+	.our-clients .heading-container h1 {
+		font-size: 70px;
+		letter-spacing: 2px;
+	}
+
+	.our-clients .heading-container img {
+		width: 150px;
+		right: 276px;
+		top: 49px;
+	}
+
+	.our-clients .description-container {
+		margin-bottom: 40px;
+	}
+
+	.our-clients .description-container .img-container {
+		margin-bottom: 32px;
+	}
+
+	.our-clients .person-container {
+		align-items: flex-start;
+		gap: 24px;
+	}
+
+	.our-clients .person-container .person-info-container {
+		max-width: 174px;
+	}
+
+	/* getting started */
+	.getting-started .content-container h1 {
+		font-size: 72px;
+	}
+
+	/* footer */
+	footer .top-side-container {
+		gap: 80px;
 	}
 }
