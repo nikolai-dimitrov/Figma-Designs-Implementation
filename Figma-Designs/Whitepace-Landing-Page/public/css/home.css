@@ -1021,6 +1021,18 @@ footer .social-media-icons-container {
 
 @media screen and (max-width: 1152px) {
 	/* nav */
+	nav {
+		margin-left: auto;
+		margin-right: 20px;
+		position: relative;
+	}
+
+	nav ul {
+		position: absolute;
+		left: -2%;
+		top: 87px;
+	}
+
 	.nav-hidden {
 		display: none;
 	}
@@ -1235,7 +1247,22 @@ footer .social-media-icons-container {
 
 @media screen and (max-width: 768px) {
 	/* nav */
+
+	nav {
+		margin: unset;
+	}
+
+	nav ul {
+		position: initial;
+		flex-direction: column;
+	}
+
 	.nav-btns-hidden {
 		display: none;
+	}
+
+	/* header */
+	header .section-content-wrapper {
+		align-items: flex-start;
 	}
 }

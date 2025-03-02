@@ -23,13 +23,18 @@ const handleBurgerMenuClick = () => {
 			"open-menu-icon",
 			"close-menu-icon"
 		);
+
 		navAnchorContainer.classList.remove("nav-hidden");
+		if (navButtonsContainer.classList.contains("nav-btns-hidden")) {
+			navButtonsContainer.classList.remove("nav-btns-hidden");
+		}
 	} else {
 		burgerMenuElement.classList.replace(
 			"close-menu-icon",
 			"open-menu-icon"
 		);
 		navAnchorContainer.classList.add("nav-hidden");
+		navButtonsContainer.classList.add("nav-btns-hidden");
 	}
 };
 
