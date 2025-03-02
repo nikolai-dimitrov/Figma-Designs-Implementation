@@ -1250,11 +1250,19 @@ footer .social-media-icons-container {
 
 	nav {
 		margin: unset;
+		flex-direction: column;
+		gap: 12px;
 	}
 
 	nav ul {
 		position: initial;
 		flex-direction: column;
+	}
+
+	.header-buttons-container {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
 	}
 
 	.nav-btns-hidden {
@@ -1264,5 +1272,9 @@ footer .social-media-icons-container {
 	/* header */
 	header .section-content-wrapper {
 		align-items: flex-start;
+	}
+
+	header .btn-secondary {
+		margin-right: unset;
 	}
 }

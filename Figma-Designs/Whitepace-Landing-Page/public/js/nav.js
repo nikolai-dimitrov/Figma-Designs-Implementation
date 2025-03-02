@@ -7,14 +7,25 @@ const burgerMenuElement = document.querySelector(".burger-menu");
 const checkTablet = window.matchMedia("(max-width: 768px)");
 const checkSmallLaptop = window.matchMedia("(max-width: 1152px)");
 
+const handleNavVisibility = () => {
+	if (window.innerWidth <= 1152) {
+		navAnchorContainer.classList.add("nav-hidden");
+	}
+
+	if (window.innerWidth <= 768) {
+		navButtonsContainer.classList.add("nav-btns-hidden");
+	}
+};
+
 const handleSmallLaptopScreen = () => {
-	console.log("lower than 1152px");
 	navAnchorContainer.classList.add("nav-hidden");
+	burgerMenuElement.classList.replace("close-menu-icon", "open-menu-icon");
 };
 
 const handleTabletScreen = () => {
-	console.log("lower than 768px");
+	navAnchorContainer.classList.add("nav-hidden");
 	navButtonsContainer.classList.add("nav-btns-hidden");
+	burgerMenuElement.classList.replace("close-menu-icon", "open-menu-icon");
 };
 
 const handleBurgerMenuClick = () => {
@@ -41,3 +52,4 @@ const handleBurgerMenuClick = () => {
 burgerMenuElement.addEventListener("click", handleBurgerMenuClick);
 checkSmallLaptop.addEventListener("change", handleSmallLaptopScreen);
 checkTablet.addEventListener("change", handleTabletScreen);
+window.addEventListener("load", handleNavVisibility);
