@@ -4,7 +4,7 @@ const navButtonsContainer = document.querySelector(
 );
 const burgerMenuElement = document.querySelector(".burger-menu");
 
-const checkTablet = window.matchMedia("(max-width: 768px)");
+const checkTablet = window.matchMedia("(max-width: 980px)");
 const checkSmallLaptop = window.matchMedia("(max-width: 1152px)");
 
 const handleNavVisibility = () => {
@@ -12,7 +12,7 @@ const handleNavVisibility = () => {
 		navAnchorContainer.classList.add("nav-hidden");
 	}
 
-	if (window.innerWidth <= 768) {
+	if (window.innerWidth <= 980) {
 		navButtonsContainer.classList.add("nav-btns-hidden");
 	}
 };

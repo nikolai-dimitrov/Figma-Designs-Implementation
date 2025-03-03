@@ -1245,7 +1245,8 @@ footer .social-media-icons-container {
 	}
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 980px) {
 	/* nav */
 
 	nav {
@@ -1277,4 +1278,36 @@ footer .social-media-icons-container {
 	header .btn-secondary {
 		margin-right: unset;
 	}
+}
+
+@media screen and (max-width: 768px) {
+/* 
+	nav {
+		margin: unset;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	nav ul {
+		position: initial;
+		flex-direction: column;
+	}
+
+	.header-buttons-container {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.nav-btns-hidden {
+		display: none;
+	}
+
+	header .section-content-wrapper {
+		align-items: flex-start;
+	}
+
+	header .btn-secondary {
+		margin-right: unset;
+	} */
 }
