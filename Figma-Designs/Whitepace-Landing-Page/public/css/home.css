@@ -1537,6 +1537,14 @@ footer .social-media-icons-container {
 		padding-bottom: unset;
 	}
 
+	footer .top-side-container .try-it-container {
+		margin-right: unset;
+	}
+
+	footer .top-side-container .try-it-container h5 {
+		margin-left: 23px;
+	}
+
 	footer .bottom-side-container {
 		padding-top: unset;
 		flex-direction: column;
