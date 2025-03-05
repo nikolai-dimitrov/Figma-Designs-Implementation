@@ -598,6 +598,10 @@ header .btn-primary div img {
 	margin-bottom: 15px;
 }
 
+.our-clients article:first-child {
+	box-shadow: 15px 10px 50px 0px rgba(0, 0, 0, 0.1);
+}
+
 /* second and third article colors css */
 .our-clients article:not(:first-child) {
 	background-color: var(--primary-color-light);
@@ -1633,4 +1637,98 @@ footer .social-media-icons-container {
 }
 
 @media screen and (max-width: 768px) {
+	/* hero */
+	.hero .image-container {
+		max-width: 551px;
+	}
+
+	/* second section */
+	.project-management .image-container img {
+		width: 561px;
+		height: 349px;
+	}
+
+	.second-section .work-together {
+		gap: 100px;
+	}
+
+	.work-together .information-container {
+		margin-bottom: unset;
+	}
+
+	.work-together .image-container {
+		max-width: 454px;
+	}
+
+	/* extensions */
+	.extensions .image-container {
+		max-width: 557px;
+	}
+
+	/* customise */
+	.customise .image-container {
+		max-width: 534px;
+		height: 397px;
+	}
+
+	/* plans */
+	.plans .card-description .sub-heading {
+		font-size: 16px;
+	}
+
+	.plans .plan-cards-container article:nth-child(2) li p {
+		font-size: 16px;
+	}
+
+	/* work */
+	.work {
+		background-position: -61% 87%;
+	}
+
+	/* data */
+	.data .image-container {
+		max-width: 513px;
+	}
+
+	/* favourite apps */
+	.favourite-apps {
+		background-position: 28% 0%;
+	}
+
+	.favourite-apps .image-container {
+		max-width: 485px;
+	}
+
+	/* our clients */
+	.our-clients {
+		/* TODO: */
+	}
+
+	/* getting started */
+	.getting-started .content-container h1 {
+		font-size: 54px;
+		letter-spacing: 2px;
+	}
+
+	/* footer */
+	footer .top-side-container .whitepace-container {
+		gap: 24px;
+	}
+
+	footer .top-side-container .whitepace-container img {
+		max-width: 351px;
+	}
+
+	footer .top-side-container li {
+		line-height: 30px;
+	}
+
+	footer .top-side-container .try-it-container {
+		max-width: 200px;
+	}
+
+	footer .top-side-container .try-it-container p {
+		font-size: 18px;
+		line-height: 30px;
+	}
 }
