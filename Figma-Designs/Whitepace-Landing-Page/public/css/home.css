@@ -1643,6 +1643,13 @@ footer .social-media-icons-container {
 	}
 
 	/* second section */
+	.project-management .information-container .heading-container img {
+		width: 330px;
+		height: 29px;
+		left: calc(100% - 330px);
+		top: calc(100% - 25px);
+	}
+
 	.project-management .image-container img {
 		width: 561px;
 		height: 349px;
@@ -1656,6 +1663,13 @@ footer .social-media-icons-container {
 		margin-bottom: unset;
 	}
 
+	.work-together .information-container .heading-container img {
+		width: 225px;
+		height: 24px;
+		left: calc(100% - 322px);
+		top: calc(100% - 20px);
+	}
+
 	.work-together .image-container {
 		max-width: 454px;
 	}
@@ -1665,13 +1679,34 @@ footer .social-media-icons-container {
 		max-width: 557px;
 	}
 
+	.extensions .information-container .heading-container img {
+		left: calc(100% - 300px);
+		top: calc(100% - 30px);
+		width: 250px;
+		height: 30px;
+	}
+
 	/* customise */
 	.customise .image-container {
 		max-width: 534px;
 		height: 397px;
 	}
 
+	.customise .information-container .heading-container img {
+		width: 215px;
+		left: calc(100% - 200px);
+		top: calc(100% - 30px);
+		height: 19px;
+	}
+
 	/* plans */
+	.plans .information-container .heading-container img {
+		left: calc(100% - 380px);
+		top: calc(100% - 25px);
+		width: 291px;
+		height: 25px;
+	}
+
 	.plans .card-description .sub-heading {
 		font-size: 16px;
 	}
@@ -1685,9 +1720,31 @@ footer .social-media-icons-container {
 		background-position: -61% 87%;
 	}
 
+	.work .information-container .heading-container img {
+		left: -6px;
+		right: unset;
+		top: calc(100% - 30px);
+		height: 42px;
+		width: 242px;
+	}
+
 	/* data */
 	.data .image-container {
 		max-width: 513px;
+	}
+
+	.data .information-container .heading-container img {
+		/* top: 40px; */
+		/* right: 133px; */
+		left: calc(40%);
+		top: calc(100% - 20px);
+		width: 276px;
+		height: 35px;
+	}
+
+	/* our sponsors */
+	.our-sponsors .heading-container img {
+		left: 35%;
 	}
 
 	/* favourite apps */
@@ -1702,6 +1759,13 @@ footer .social-media-icons-container {
 	/* our clients */
 	.our-clients {
 		/* TODO: */
+	}
+
+	.our-clients .heading-container img {
+		width: 150px;
+		height: 30px;
+		right: 30%;
+		top: calc(100% - 30px);
 	}
 
 	/* getting started */
@@ -1730,5 +1794,12 @@ footer .social-media-icons-container {
 	footer .top-side-container .try-it-container p {
 		font-size: 18px;
 		line-height: 30px;
+	}
+}
+
+@media screen and (max-width: 730px) {
+	.customise .information-container .heading-container img {
+		left: calc(50%);
+		transform: translateX(-50%);
 	}
 }
