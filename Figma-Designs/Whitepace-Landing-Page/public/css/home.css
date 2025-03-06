@@ -1802,4 +1802,8 @@ footer .social-media-icons-container {
 		left: calc(50%);
 		transform: translateX(-50%);
 	}
+
+	.our-clients article:not(:first-child) {
+		display: none;
+	}
 }
