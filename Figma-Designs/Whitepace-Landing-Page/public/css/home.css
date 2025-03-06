@@ -1547,6 +1547,7 @@ footer .social-media-icons-container {
 	.our-clients .section-content-wrapper {
 		padding-left: unset;
 		padding-right: unset;
+		overflow: hidden;
 	}
 
 	.our-clients .heading-container {
@@ -1559,8 +1560,9 @@ footer .social-media-icons-container {
 	}
 
 	.our-clients .cards-container {
-		overflow: hidden;
+		/* overflow: hidden; */
 		position: relative;
+		left: 0%;
 	}
 
 	.our-clients .cards-container article:first-child {
@@ -1578,8 +1580,26 @@ footer .social-media-icons-container {
 		position: absolute;
 		right: -300px;
 	}
-	/* getting started */
 
+	.show-left-card,
+	.show-middle-card,
+	.show-right-card {
+		transition: 1s;
+	}
+
+	.show-left-card {
+		left: 60% !important;
+	}
+
+	.show-middle-card {
+		left: 60% !important;
+	}
+
+	.show-right-card {
+		left: 60% !important;
+	}
+
+	/* getting started */
 	.getting-started .section-content-wrapper {
 		padding-left: 20px;
 		padding-right: 20px;
@@ -1734,8 +1754,6 @@ footer .social-media-icons-container {
 	}
 
 	.data .information-container .heading-container img {
-		/* top: 40px; */
-		/* right: 133px; */
 		left: calc(40%);
 		top: calc(100% - 20px);
 		width: 276px;
