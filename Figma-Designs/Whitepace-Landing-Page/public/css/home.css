@@ -1437,6 +1437,7 @@ footer .social-media-icons-container {
 	.plans .section-content-wrapper {
 		padding-left: unset;
 		padding-right: unset;
+		overflow: hidden;
 	}
 
 	.plans .information-container {
@@ -1452,7 +1453,6 @@ footer .social-media-icons-container {
 
 	.plans .plan-cards-container {
 		position: relative;
-		overflow: hidden;
 	}
 
 	.plans .plan-cards-container article:first-child {
@@ -1585,7 +1585,6 @@ footer .social-media-icons-container {
 	}
 
 	.our-clients .cards-container {
-		/* overflow: hidden; */
 		position: relative;
 		left: 0%;
 	}
@@ -1617,13 +1616,13 @@ footer .social-media-icons-container {
 	}
 
 	.show-middle-card {
-		left: 60% !important;
+		left: 0% !important;
 	}
 
 	.show-right-card {
-		left: 60% !important;
+		left: -60% !important;
 	}
-	
+
 	/* getting started */
 	.getting-started .section-content-wrapper {
 		padding-left: 20px;

@@ -1,14 +1,13 @@
-// const ourClientsCardsContainerElement =
-// 	document.querySelector(".cards-container");
-// const [middleCardElement, leftCardElement, rightCardElement] =
-// 	ourClientsCardsContainerElement.children;
-
+const plansCardsContainerElement = document.querySelector(
+	".plans .plan-cards-container"
+);
 const plansCardsSlider = document.querySelector(".plans .slider-plans");
+
+const ourClientsCardsContainerElement =
+	document.querySelector(".cards-container");
 const ourClientsCardsSlider = document.querySelector(
 	".our-clients .slider-clients"
 );
-// const [leftCardLinkerElement, middleCardLinkerElement, rightCardLinkerElement] =
-// 	ourClientsCardsSlider.children;
 
 const slidersMapper = {
 	plansSliderElements: [plansCardsSlider, [...plansCardsSlider.children]],
@@ -46,16 +45,38 @@ const sliderActiveLinkerColorHandler = (clickedLinker) => {
 	}
 };
 
-const sliderClickHandler = (event) => {
+const sliderClickHandler = (event, section) => {
 	sliderActiveLinkerColorHandler(event.target);
+	if (section == "ourClients") {
+		if (event.target.classList.contains("left-card-link")) {
+			ourClientsCardsContainerElement.classList = "cards-container";
+			ourClientsCardsContainerElement.classList.add("show-left-card");
+		} else if (event.target.classList.contains("middle-card-link")) {
+			ourClientsCardsContainerElement.classList = "cards-container";
+			ourClientsCardsContainerElement.classList.add("show-middle-card");
+		} else if (event.target.classList.contains("right-card-link")) {
+			ourClientsCardsContainerElement.classList = "cards-container";
+			ourClientsCardsContainerElement.classList.add("show-right-card");
+		}
+	} else if (section == "plans") {
+		if (event.target.classList.contains("left-card-link")) {
+			plansCardsContainerElement.classList = "plan-cards-container";
+			plansCardsContainerElement.classList.add("show-left-card");
+		} else if (event.target.classList.contains("middle-card-link")) {
+			plansCardsContainerElement.classList = "plan-cards-container";
+			plansCardsContainerElement.classList.add("show-middle-card");
+		} else if (event.target.classList.contains("right-card-link")) {
+			plansCardsContainerElement.classList = "plan-cards-container";
+			plansCardsContainerElement.classList.add("show-right-card");
+		}
+	}
 };
 
-ourClientsCardsSlider.addEventListener("click", sliderClickHandler);
-plansCardsSlider.addEventListener("click", sliderClickHandler);
+ourClientsCardsSlider.addEventListener("click", (event) =>
+	sliderClickHandler(event, "ourClients")
+);
+plansCardsSlider.addEventListener("click", (event) =>
+	sliderClickHandler(event, "plans")
+);
+
 sliderActiveLinkerColorHandler();
-
-// const showFirstArticle = () => {
-// 	cardsContainerElement.classList.add("show-left-card");
-// };
-
-// ourClientsFirstArticle.addEventListener("click", showFirstArticle);
