@@ -9,35 +9,30 @@ const ourClientsCardsSlider = document.querySelector(
 	".our-clients .slider-clients"
 );
 
-const slidersMapper = {
-	plansSliderElements: [plansCardsSlider, [...plansCardsSlider.children]],
-	ourClientsSliderElements: [
-		ourClientsCardsSlider,
-		[...ourClientsCardsSlider.children],
-	],
+const sectionsToSliderElementsMapper = {
+	plans: [plansCardsSlider, [...plansCardsSlider.children]],
+	ourClients: [ourClientsCardsSlider, [...ourClientsCardsSlider.children]],
 };
 
-const sliderActiveLinkerColorHandler = (clickedLinker) => {
-	if (clickedLinker) {
-		const sliderContainer = clickedLinker.parentElement;
-		for (const key in slidersMapper) {
-			// check which slider is clicked and get its children
-			if (slidersMapper[key][0] == sliderContainer) {
-				const sliderChildrenElementsArray = slidersMapper[key][1];
-				// handle color changing (add active color to clicked children element)
-				sliderChildrenElementsArray.forEach((element) => {
-					if (element == clickedLinker) {
-						clickedLinker.classList.add("active-color");
-					} else {
-						element.classList.remove("active-color");
-					}
-				});
-			}
+const sliderColorsHandler = (eventTarget, section) => {
+	// section param - won't be undefined only if user click on slider
+	if (section) {
+		if (eventTarget.tagName == "SPAN") {
+			const sliderChildrenElementsArray =
+				sectionsToSliderElementsMapper[section][1];
+			sliderChildrenElementsArray.forEach((element) => {
+				if (element == eventTarget) {
+					eventTarget.classList.add("active-color");
+				} else {
+					element.classList.remove("active-color");
+				}
+			});
 		}
+		// section param - will be undefined on page reload or initial page load
 	} else {
-		// add active color to the sliders' middle element
-		for (const key in slidersMapper) {
-			const sliderChildrenElementsArray = slidersMapper[key][1];
+		for (const key in sectionsToSliderElementsMapper) {
+			const sliderChildrenElementsArray =
+				sectionsToSliderElementsMapper[key][1];
 			const middleSliderElement = sliderChildrenElementsArray[1];
 
 			middleSliderElement.classList.add("active-color");
@@ -46,7 +41,7 @@ const sliderActiveLinkerColorHandler = (clickedLinker) => {
 };
 
 const sliderClickHandler = (event, section) => {
-	sliderActiveLinkerColorHandler(event.target);
+	sliderColorsHandler(event.target, section);
 	if (section == "ourClients") {
 		if (event.target.classList.contains("left-card-link")) {
 			ourClientsCardsContainerElement.classList = "cards-container";
@@ -79,4 +74,4 @@ plansCardsSlider.addEventListener("click", (event) =>
 	sliderClickHandler(event, "plans")
 );
 
-sliderActiveLinkerColorHandler();
+sliderColorsHandler();
