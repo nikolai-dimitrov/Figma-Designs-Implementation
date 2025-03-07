@@ -279,7 +279,7 @@ header .btn-primary div img {
 
 /* Plans section */
 .plans {
-	padding: 140px 0px;
+	padding: 120px 0px;
 }
 
 .plans .information-container {
@@ -411,6 +411,20 @@ header .btn-primary div img {
 .plans article:nth-child(even) button {
 	background-color: var(--primary-color-light);
 	color: var(--white-color);
+}
+
+/* plans slider css */
+.plans .slider-plans {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.plans .slider-plans span {
+	width: 12px;
+	height: 12px;
+	background-color: var(--primary-color-light);
+	display: inline-block;
+	border-radius: 50%;
 }
 
 /* Work section */
@@ -652,9 +666,20 @@ header .btn-primary div img {
 	letter-spacing: -0.2px;
 }
 
-.our-clients .slider img {
-	display: block;
-	margin: 0 auto;
+.our-clients .slider-clients {
+	text-align: center;
+}
+
+.our-clients .slider-clients span {
+	width: 12px;
+	height: 12px;
+	background-color: var(--primary-color-light);
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.active-color {
+	background-color: var(--primary-color-dark) !important;
 }
 
 /* Getting started section */
@@ -1598,7 +1623,7 @@ footer .social-media-icons-container {
 	.show-right-card {
 		left: 60% !important;
 	}
-
+	
 	/* getting started */
 	.getting-started .section-content-wrapper {
 		padding-left: 20px;
