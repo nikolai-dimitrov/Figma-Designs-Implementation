@@ -40,30 +40,50 @@ const sliderColorsHandler = (eventTarget, section) => {
 	}
 };
 
+const tabletSliderHandler = (event, section) => {
+	if (event.target.tagName == "SPAN") {
+		const cardLink = event.target.classList[0];
+		const cardToSliderMapper = {
+			"left-card-link": "show-left-card",
+			"middle-card-link": "show-middle-card",
+			"right-card-link": "show-right-card",
+		};
+
+		if (section == "ourClients") {
+			ourClientsCardsContainerElement.classList = "cards-container";
+			ourClientsCardsContainerElement.classList.add(
+				cardToSliderMapper[cardLink]
+			);
+		} else if (section == "plans") {
+			plansCardsContainerElement.classList = "plan-cards-container";
+			plansCardsContainerElement.classList.add(
+				cardToSliderMapper[cardLink]
+			);
+		}
+	}
+};
+
+const mobileSliderHandler = (event) => {
+	// const [leftCard, middleCard, rightCard] = [
+	// 	...ourClientsCardsContainerElement.children,
+	// ];
+	// [...ourClientsCardsContainerElement.children].forEach((el) =>
+	// 	el.classList.remove("show-hidden-cards")
+	// );
+	// if (event.target.classList.contains("left-card-link")) {
+	// 	middleCard.classList.add("show-hidden-cards");
+	// } else if (event.target.classList.contains("right-card-link")) {
+	// 	rightCard.classList.add("show-hidden-cards");
+	// } else if (event.target.classList.contains("middle-card-link")) {
+	// 	leftCard.classList.add("show-hidden-cards");
+	// }
+};
 const sliderClickHandler = (event, section) => {
 	sliderColorsHandler(event.target, section);
-	if (section == "ourClients") {
-		if (event.target.classList.contains("left-card-link")) {
-			ourClientsCardsContainerElement.classList = "cards-container";
-			ourClientsCardsContainerElement.classList.add("show-left-card");
-		} else if (event.target.classList.contains("middle-card-link")) {
-			ourClientsCardsContainerElement.classList = "cards-container";
-			ourClientsCardsContainerElement.classList.add("show-middle-card");
-		} else if (event.target.classList.contains("right-card-link")) {
-			ourClientsCardsContainerElement.classList = "cards-container";
-			ourClientsCardsContainerElement.classList.add("show-right-card");
-		}
-	} else if (section == "plans") {
-		if (event.target.classList.contains("left-card-link")) {
-			plansCardsContainerElement.classList = "plan-cards-container";
-			plansCardsContainerElement.classList.add("show-left-card");
-		} else if (event.target.classList.contains("middle-card-link")) {
-			plansCardsContainerElement.classList = "plan-cards-container";
-			plansCardsContainerElement.classList.add("show-middle-card");
-		} else if (event.target.classList.contains("right-card-link")) {
-			plansCardsContainerElement.classList = "plan-cards-container";
-			plansCardsContainerElement.classList.add("show-right-card");
-		}
+	if (window.innerWidth > 730) {
+		tabletSliderHandler(event, section);
+	} else {
+		mobileSliderHandler(event);
 	}
 };
 
