@@ -1840,11 +1840,22 @@ footer .social-media-icons-container {
 }
 
 @media screen and (max-width: 730px) {
+	/* customise */
 	.customise .information-container .heading-container img {
 		left: calc(50%);
 		transform: translateX(-50%);
 	}
-	
+
+	/* plans */
+	.plans .plan-cards-container article:first-child {
+		left: -100%;
+	}
+
+	.plans .plan-cards-container article:last-child {
+		right: -100%;
+	}
+
+	/* our clients */
 	.our-clients .cards-container article:last-child {
 		position: absolute;
 		right: -100%;
@@ -1853,14 +1864,13 @@ footer .social-media-icons-container {
 	.our-clients .cards-container article:nth-child(2) {
 		position: absolute;
 		left: -100%;
-
 	}
-	
-	/* .show-hidden-cards {
+
+	.show-hidden-cards {
 		z-index: 3;
 		left: 50% !important;
 		transform: translateX(-50%);
 		width: 440px;
 		transition: 1s;
-	} */
+	}
 }
