@@ -1844,8 +1844,23 @@ footer .social-media-icons-container {
 		left: calc(50%);
 		transform: translateX(-50%);
 	}
-
-	.our-clients article:not(:first-child) {
-		display: none;
+	
+	.our-clients .cards-container article:last-child {
+		position: absolute;
+		right: -100%;
 	}
+
+	.our-clients .cards-container article:nth-child(2) {
+		position: absolute;
+		left: -100%;
+
+	}
+	
+	/* .show-hidden-cards {
+		z-index: 3;
+		left: 50% !important;
+		transform: translateX(-50%);
+		width: 440px;
+		transition: 1s;
+	} */
 }
