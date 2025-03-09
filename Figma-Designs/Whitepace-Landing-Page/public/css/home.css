@@ -1847,30 +1847,48 @@ footer .social-media-icons-container {
 	}
 
 	/* plans */
+	.plans .plan-cards-container article:first-child,
+	.plans .plan-cards-container article:last-child {
+		width: 474px;
+		transition: 1s;
+		z-index: 5;
+		background-color: var(--white-color);
+		padding: 80px 44px;
+		height: 100%;
+	}
 	.plans .plan-cards-container article:first-child {
 		left: -100%;
+		width: 474px;
+	}
+
+	.plans .plan-cards-container article:nth-child(2) {
+		z-index: 0;
 	}
 
 	.plans .plan-cards-container article:last-child {
-		right: -100%;
+		left: 100%;
+		width: 474px;
 	}
 
 	/* our clients */
+	.our-clients .cards-container article:last-child,
+	.our-clients .cards-container article:nth-child(2) {
+		width: 440px;
+		transition: 1s;
+		z-index: 5;
+	}
+
 	.our-clients .cards-container article:last-child {
-		position: absolute;
-		right: -100%;
+		left: 100%;
 	}
 
 	.our-clients .cards-container article:nth-child(2) {
-		position: absolute;
 		left: -100%;
 	}
 
 	.show-hidden-cards {
-		z-index: 3;
+		z-index: 5;
 		left: 50% !important;
 		transform: translateX(-50%);
-		width: 440px;
-		transition: 1s;
 	}
 }
