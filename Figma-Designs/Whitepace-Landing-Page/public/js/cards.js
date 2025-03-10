@@ -41,6 +41,8 @@ const sliderColorsHandler = (eventTarget, section) => {
 };
 
 const tabletSliderHandler = (event, section) => {
+	/* triggers when one of three spans in the slider is clicked and depending on which one is clicked
+	 add class to cards container than container moves left or right */
 	if (event.target.tagName == "SPAN") {
 		const cardLink = event.target.classList[0];
 		const cardToSliderMapper = {
@@ -63,27 +65,37 @@ const tabletSliderHandler = (event, section) => {
 	}
 };
 
-const mobileSliderHandler = (event) => {
-	// const [leftCard, middleCard, rightCard] = [
-	// 	...ourClientsCardsContainerElement.children,
-	// ];
-	// [...ourClientsCardsContainerElement.children].forEach((el) =>
-	// 	el.classList.remove("show-hidden-cards")
-	// );
-	// if (event.target.classList.contains("left-card-link")) {
-	// 	middleCard.classList.add("show-hidden-cards");
-	// } else if (event.target.classList.contains("right-card-link")) {
-	// 	rightCard.classList.add("show-hidden-cards");
-	// } else if (event.target.classList.contains("middle-card-link")) {
-	// 	leftCard.classList.add("show-hidden-cards");
-	// }
+const mobileSliderHandler = (event, section) => {
+	if (event.target.tagName == "SPAN") {
+		const sectionsMapper = {
+			ourClients: ourClientsCardsContainerElement,
+			plans: plansCardsContainerElement,
+		};
+		const currentSection = sectionsMapper[section];
+		const [leftCard, middleCard, rightCard] = [...currentSection.children];
+
+		[...currentSection.children].forEach((el) => {
+			el.classList.remove("show-hidden-cards");
+		});
+
+		// TODO: Refactor css card order with order property
+		const cardToSliderMapper = {
+			"left-card-link": section == "plans" ? leftCard : middleCard,
+			"middle-card-link": section == "plans" ? middleCard : leftCard,
+			"right-card-link": rightCard,
+		};
+
+		const cardClassName = event.target.classList[0];
+		cardToSliderMapper[cardClassName].classList.add("show-hidden-cards");
+	}
 };
+
 const sliderClickHandler = (event, section) => {
 	sliderColorsHandler(event.target, section);
 	if (window.innerWidth > 730) {
 		tabletSliderHandler(event, section);
 	} else {
-		mobileSliderHandler(event);
+		mobileSliderHandler(event, section);
 	}
 };
 
