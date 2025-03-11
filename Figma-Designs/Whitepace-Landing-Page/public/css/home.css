@@ -1892,3 +1892,141 @@ footer .social-media-icons-container {
 		transform: translateX(-50%);
 	}
 }
+
+@media screen and (max-width: 500px) {
+	/* hero */
+	.hero .section-content-wrapper {
+		padding: 80px 17px 80px 17px;
+	}
+
+	.hero .information-container h2 {
+		font-size: 36px;
+	}
+
+	/* second section */
+	.second-section {
+		padding: 80px 0px 80px 0px;
+	}
+
+	.second-section .section-content-wrapper {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	.second-section .work-together {
+		gap: 60px;
+	}
+
+	/* extensions */
+	.extensions .section-content-wrapper {
+		gap: 60px;
+		padding: 80px 16px;
+	}
+
+	/* customise */
+	.customise .section-content-wrapper {
+		padding: 100px 16px;
+	}
+
+	.customise .information-container h1 {
+		font-size: 40px;
+	}
+
+	/* plans */
+	.plans {
+		padding: 80px 16px;
+	}
+
+	.plans .information-container {
+		margin-bottom: 85px;
+	}
+
+	/* TODO: Padding 20px */
+	/* .plans .plan-cards-container article {
+		padding: 20px !important;
+	} */
+
+	.plans .slider-plans {
+		margin-top: 85px;
+	}
+
+	/* work */
+	.work {
+		padding: 100px 0px 140px 0;
+	}
+
+	.work .section-content-wrapper {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	/* data */
+	.data .section-content-wrapper {
+		padding: 80px 16px;
+	}
+	.data .information-container .heading-container img {
+		width: 200px;
+		left: 30%;
+	}
+
+	/* our sponsors */
+	.our-sponsors {
+		padding: 80px 0px;
+	}
+
+	.our-sponsors .section-content-wrapper {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	/* favourite apps */
+	.favourite-apps .section-content-wrapper {
+		padding: 80px 17px;
+	}
+
+	/* our clients */
+	.our-clients {
+		padding: 100px 17px;
+	}
+
+	.our-clients .heading-container h1 {
+		font-size: 40px;
+	}
+
+	/* getting started */
+	.getting-started {
+		padding: 100px 0 32px 0;
+	}
+
+	.getting-started .section-content-wrapper {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	.getting-started .content-container h1 {
+		font-size: 40px;
+	}
+
+	.getting-started .information-container p {
+		font-size: 18px;
+	}
+
+	.getting-started .information-container {
+		gap: 40px;
+	}
+
+	.getting-started .information-container div:nth-child(4) {
+		font-size: 18px;
+	}
+
+	/* footer */
+
+	footer {
+		padding-top: 140px;
+	}
+
+	footer .section-content-wrapper {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+}
