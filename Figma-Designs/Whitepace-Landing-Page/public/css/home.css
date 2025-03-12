@@ -1941,10 +1941,12 @@ footer .social-media-icons-container {
 		margin-bottom: 85px;
 	}
 
-	/* TODO: Padding 20px */
-	/* .plans .plan-cards-container article {
-		padding: 20px !important;
-	} */
+	.plans .plan-cards-container article:first-child,
+	.plans .plan-cards-container article:nth-child(2),
+	.plans .plan-cards-container article:last-child {
+		padding: 20px;
+		width: 100%;
+	}
 
 	.plans .slider-plans {
 		margin-top: 85px;
@@ -1993,6 +1995,46 @@ footer .social-media-icons-container {
 		font-size: 40px;
 	}
 
+	.our-clients article {
+		padding: 20px;
+		width: 100%;
+	}
+
+	.our-clients .cards-container article:last-child,
+	.our-clients .cards-container article:nth-child(2) {
+		width: 100%;
+
+	}
+
+	.our-clients article h5 {
+		font-size: 18px;
+	}
+
+	.our-clients .description-container .img-container {
+		max-width: 56px;
+		max-height: 40px;
+	}
+
+	.our-clients .description-container .sub-heading {
+		font-size: 16px;
+	}
+
+	.our-clients .person-container {
+		flex-direction: column;
+	}
+
+	.our-clients article .person-info-container p {
+		font-size: 18px;
+	}
+
+	.our-clients .person-container .img-container {
+		max-width: 65px;
+	}
+
+	.our-clients .person-container .person-info-container {
+		max-width: unset;
+	}
+
 	/* getting started */
 	.getting-started {
 		padding: 100px 0 32px 0;
@@ -2018,6 +2060,7 @@ footer .social-media-icons-container {
 	.getting-started .information-container div:nth-child(4) {
 		font-size: 18px;
 	}
+
 	.getting-started .icons-container li {
 		width: 35px;
 	}
