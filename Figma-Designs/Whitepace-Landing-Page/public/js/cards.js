@@ -76,6 +76,7 @@ const mobileSliderHandler = (event, section) => {
 
 		[...currentSection.children].forEach((el) => {
 			el.classList.remove("show-hidden-cards");
+			el.classList.remove("transition-delay");
 		});
 
 		// TODO: Refactor css card order with order property
@@ -84,9 +85,10 @@ const mobileSliderHandler = (event, section) => {
 			"middle-card-link": section == "plans" ? middleCard : leftCard,
 			"right-card-link": rightCard,
 		};
-
+		
 		const cardClassName = event.target.classList[0];
 		cardToSliderMapper[cardClassName].classList.add("show-hidden-cards");
+		cardToSliderMapper[cardClassName].classList.add("transition-delay");
 	}
 };
 

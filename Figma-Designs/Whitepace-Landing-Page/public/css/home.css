@@ -1952,6 +1952,10 @@ footer .social-media-icons-container {
 		margin-top: 85px;
 	}
 
+	.transition-delay {
+		transition-delay: 0.3s !important;
+	}
+
 	/* work */
 	.work {
 		padding: 100px 0px 140px 0;
@@ -2003,7 +2007,6 @@ footer .social-media-icons-container {
 	.our-clients .cards-container article:last-child,
 	.our-clients .cards-container article:nth-child(2) {
 		width: 100%;
-
 	}
 
 	.our-clients article h5 {
