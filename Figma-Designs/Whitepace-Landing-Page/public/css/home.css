@@ -1894,6 +1894,15 @@ footer .social-media-icons-container {
 }
 
 @media screen and (max-width: 500px) {
+	/* header */
+	header .section-content-wrapper {
+		padding: 16px;
+	}
+
+	header .logo-container {
+		max-width: 134px;
+	}
+
 	/* hero */
 	.hero .section-content-wrapper {
 		padding: 80px 17px 80px 17px;
@@ -1963,8 +1972,8 @@ footer .social-media-icons-container {
 	}
 
 	.plans .information-container .heading-container img {
-        left: calc(100% - 200px);
-        width: 100px;
+		left: calc(100% - 200px);
+		width: 100px;
 	}
 
 	.plans .plan-cards-container article:first-child,
@@ -2083,10 +2092,13 @@ footer .social-media-icons-container {
 
 	.getting-started .content-container h1 {
 		font-size: 40px;
+		letter-spacing: initial;
+		text-align: initial;
 	}
 
 	.getting-started .information-container p {
 		font-size: 18px;
+		text-align: initial;
 	}
 
 	.getting-started .information-container {
@@ -2162,8 +2174,7 @@ footer .social-media-icons-container {
 
 @media screen and (max-width: 300px) {
 	.data .information-container .heading-container img {
-        width: 100px;
-        left: 30%;
-    }
-	
+		width: 100px;
+		left: 30%;
+	}
 }
