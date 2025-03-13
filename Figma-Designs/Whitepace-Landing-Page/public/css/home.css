@@ -1904,6 +1904,11 @@ footer .social-media-icons-container {
 	}
 
 	/* hero */
+	.hero {
+		background-size: initial;
+		background-position: 92% 29%;
+	}
+
 	.hero .section-content-wrapper {
 		padding: 80px 17px 80px 17px;
 	}
@@ -1994,6 +1999,7 @@ footer .social-media-icons-container {
 	/* work */
 	.work {
 		padding: 100px 0px 140px 0;
+		background-image: unset;
 	}
 
 	.work .section-content-wrapper {
