@@ -1682,6 +1682,11 @@ footer .social-media-icons-container {
 
 @media screen and (max-width: 768px) {
 	/* hero */
+	.hero {
+		background-size: initial;
+		background-position: 75% 62%;
+	}
+
 	.hero .image-container {
 		max-width: 551px;
 	}
