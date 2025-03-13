@@ -1913,14 +1913,31 @@ footer .social-media-icons-container {
 		padding-right: 16px;
 	}
 
+	.project-management .information-container .heading-container img {
+		width: 200px;
+		left: calc(100% - 229px);
+	}
+
 	.second-section .work-together {
 		gap: 60px;
+	}
+
+	.work-together .information-container .heading-container img {
+		width: 150px;
+		left: calc(100% - 174px);
 	}
 
 	/* extensions */
 	.extensions .section-content-wrapper {
 		gap: 60px;
 		padding: 80px 16px;
+	}
+
+	.extensions .information-container .heading-container img {
+		left: calc(100% - 160px);
+		top: calc(100% - 16px);
+		width: 120px;
+		height: 20px;
 	}
 
 	/* customise */
@@ -1932,6 +1949,10 @@ footer .social-media-icons-container {
 		font-size: 40px;
 	}
 
+	.customise .information-container .heading-container img {
+		width: 150px;
+	}
+
 	/* plans */
 	.plans {
 		padding: 80px 16px;
@@ -1939,6 +1960,11 @@ footer .social-media-icons-container {
 
 	.plans .information-container {
 		margin-bottom: 85px;
+	}
+
+	.plans .information-container .heading-container img {
+        left: calc(100% - 200px);
+        width: 100px;
 	}
 
 	.plans .plan-cards-container article:first-child,
@@ -1983,6 +2009,13 @@ footer .social-media-icons-container {
 	.our-sponsors .section-content-wrapper {
 		padding-left: 16px;
 		padding-right: 16px;
+	}
+
+	.our-sponsors .heading-container img {
+		left: 40%;
+		top: 35px;
+		width: 150px;
+		height: 20px;
 	}
 
 	/* favourite apps */
@@ -2125,4 +2158,12 @@ footer .social-media-icons-container {
 	footer .social-media-icons-container {
 		justify-content: center;
 	}
+}
+
+@media screen and (max-width: 300px) {
+	.data .information-container .heading-container img {
+        width: 100px;
+        left: 30%;
+    }
+	
 }
