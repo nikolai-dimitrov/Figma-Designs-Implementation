@@ -1,3 +1,4 @@
+const navElement = document.querySelector("nav");
 const navAnchorContainer = document.querySelector("nav ul");
 const navButtonsContainer = document.querySelector(
 	"nav .header-buttons-container"
@@ -26,6 +27,8 @@ const handleTabletScreen = () => {
 	navAnchorContainer.classList.add("nav-hidden");
 	navButtonsContainer.classList.add("nav-btns-hidden");
 	burgerMenuElement.classList.replace("close-menu-icon", "open-menu-icon");
+
+	navElement.classList.remove("mobile-nav-container");
 };
 
 const handleBurgerMenuClick = () => {
@@ -35,6 +38,7 @@ const handleBurgerMenuClick = () => {
 			"close-menu-icon"
 		);
 
+		navElement.classList.add("mobile-nav-container");
 		navAnchorContainer.classList.remove("nav-hidden");
 		if (navButtonsContainer.classList.contains("nav-btns-hidden")) {
 			navButtonsContainer.classList.remove("nav-btns-hidden");
@@ -44,6 +48,8 @@ const handleBurgerMenuClick = () => {
 			"close-menu-icon",
 			"open-menu-icon"
 		);
+
+		navElement.classList.remove("mobile-nav-container");
 		navAnchorContainer.classList.add("nav-hidden");
 		navButtonsContainer.classList.add("nav-btns-hidden");
 	}

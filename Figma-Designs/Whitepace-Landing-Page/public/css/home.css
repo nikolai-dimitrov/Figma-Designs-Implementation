@@ -14,6 +14,7 @@ header .section-content-wrapper {
 	display: none;
 	width: 42px;
 	height: 25px;
+	z-index: 5;
 }
 
 .open-menu-icon {
@@ -1299,10 +1300,19 @@ footer .social-media-icons-container {
 	}
 
 	/* nav */
+	.mobile-nav-container {
+		width: 100%;
+		position: absolute;
+		left: 0%;
+		z-index: 4;
+		background: #043873;
+	}
+
 	nav {
 		margin: unset;
 		flex-direction: column;
 		gap: 12px;
+		transition: 0.5s;
 	}
 
 	nav ul {
