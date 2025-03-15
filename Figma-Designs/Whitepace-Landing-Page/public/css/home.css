@@ -34,6 +34,12 @@ nav {
 nav ul {
 	display: flex;
 	gap: 32px;
+	transition: opacity 0.5s ease-in-out;
+	opacity: 1;
+
+	@starting-style {
+		opacity: 0;
+	}
 }
 
 nav ul a {
@@ -45,6 +51,15 @@ nav ul a {
 	align-items: center;
 	gap: 10px;
 	font-size: 18px;
+}
+
+.header-buttons-container {
+	transition: opacity 0.5s ease-in-out;
+	opacity: 1;
+
+	@starting-style {
+		opacity: 0;
+	}
 }
 
 header .btn-secondary {
@@ -1064,6 +1079,7 @@ footer .social-media-icons-container {
 
 	.nav-hidden {
 		display: none;
+		opacity: 0;
 	}
 
 	.burger-menu {
