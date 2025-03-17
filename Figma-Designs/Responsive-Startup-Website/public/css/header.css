@@ -29,6 +29,42 @@
 	color: var(--white-color-100);
 }
 
+.burger-menu {
+	position: relative;
+	width: 50px;
+	height: 35px;
+}
+
+.top,
+.bottom {
+	height: 3px;
+	width: 40px;
+	background-color: var(--white-color-100);
+	position: absolute;
+	transform: rotate(0deg);
+	transition: 0.4s;
+}
+
+.top {
+	top: 7px;
+}
+
+.bottom {
+	bottom: 7px;
+}
+
+.top.spin {
+	top: 15px;
+	transform: rotate(135deg);
+	background-color: #fff;
+}
+
+.bottom.spin {
+	bottom: 17px;
+	transform: rotate(225deg);
+	background-color: #fff;
+}
+
 @media screen and (max-width: 1200px) {
 	.header-content {
 		max-width: 1000px;
