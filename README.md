@@ -8,7 +8,7 @@ Pixel perfect implementation of different figma designs
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-## **[Live Demo](https://www.figma.com/community/file/1156860863353724933)**
+## **[Live Demo](https://figma-designs-4f504.web.app)**
 
 ### **For your convenience, I have collected 4 implemented Figma designs in this repo. You can open our live demo and select the design you want to view. There is also a short description for each design**.
 
