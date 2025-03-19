@@ -10,7 +10,7 @@ Pixel perfect implementation of different figma designs
 
 ## **[Live Demo](https://figma-designs-4f504.web.app)**
 
-### **For your convenience, I have collected 4 implemented Figma designs in this repo. You can open our live demo and select the design you want to view. There is also a short description for each design**.
+### **For your convenience, I have collected 4 implemented Figma designs in this repo. You can open our live demo and select the design you want to view.**.
 
 ---
 
